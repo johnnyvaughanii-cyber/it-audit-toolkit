@@ -1,0 +1,22 @@
+# Generated workpapers — outputs, not source
+workpapers/*
+!workpapers/.gitkeep
+
+# Guardrail: never commit real extracts.
+# Synthetic test data lives in data/ and is committed intentionally.
+*_PROD.csv
+*_prod.csv
+*_LIVE.csv
+*_live.csv
+*_CLIENT.csv
+*_client.csv
+/real/
+/client/
+/prod/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/

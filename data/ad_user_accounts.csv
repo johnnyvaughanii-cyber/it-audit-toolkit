@@ -1,0 +1,497 @@
+SamAccountName,DisplayName,EmployeeID,Department,AccountType,Enabled,WhenCreated,LastLogonDate,PasswordLastSet,PrivilegedGroup,MFAEnrolled
+enelson2,"Nelson, Emily",E102862,Finance,User,FALSE,03/16/2021,03/29/2025,06/22/2025,,TRUE
+randersson2,"Andersson, Rebecca",E101427,Engineering,User,TRUE,10/13/2025,07/23/2026,08/15/2026,,TRUE
+sallen,"Allen, Sarah",E100966,Marketing,User,TRUE,02/12/2026,07/19/2026,02/12/2026,,TRUE
+eandersson,"Andersson, Elena",E105005,Operations,User,TRUE,09/12/2015,07/05/2026,07/08/2026,,TRUE
+edubois,"Dubois, Elizabeth",E101364,Marketing,User,TRUE,05/23/2009,07/19/2026,07/20/2026,,TRUE
+mwilson,"Wilson, Michael",E104426,Engineering,User,TRUE,05/20/2011,07/26/2026,07/17/2026,,TRUE
+crobinson,"Robinson, Charles",E100271,Marketing,User,TRUE,01/05/2023,08/06/2026,08/13/2026,,TRUE
+eadams,"Adams, Elena",E100668,Finance,User,TRUE,12/14/2021,07/06/2026,05/31/2026,Firewall_Admins,TRUE
+jmartinez,"Martinez, James",E104694,Sales,User,TRUE,06/07/2014,03/03/2025,04/13/2026,,TRUE
+slee,"Lee, Sandra",E103667,Human Resources,User,TRUE,04/19/2017,07/18/2026,07/22/2026,,TRUE
+rmitchell,"Mitchell, Rebecca",E105207,Sales,User,TRUE,06/03/2012,07/27/2026,08/24/2026,,TRUE
+svc_scanner01,Service - Scan to Folder,,Information Technology,Service,TRUE,07/21/2019,07/13/2026,11/01/2019,,FALSE
+nadams,"Adams, Nancy",E104988,Operations,User,TRUE,02/21/2020,07/20/2026,09/30/2023,,TRUE
+wrobinson,"Robinson, Wei",E100175,Engineering,User,TRUE,03/27/2017,08/19/2026,06/11/2026,,TRUE
+rgreen,"Green, Richard",E102665,Legal & Compliance,User,TRUE,04/22/2025,08/25/2026,07/22/2026,,TRUE
+aflores2,"Flores, Ashley",E103313,Information Technology,User,FALSE,10/05/2013,05/29/2024,05/21/2026,,TRUE
+kallen,"Allen, Kenneth",E100468,Information Technology,User,TRUE,03/30/2011,07/19/2026,04/18/2026,ERP_Superuser,FALSE
+nthompson2,"Thompson, Nia",E102368,Human Resources,User,TRUE,02/03/2011,08/29/2026,06/02/2026,,TRUE
+dramirez2,"Ramirez, Deborah",E102629,Operations,User,TRUE,05/02/2021,08/06/2026,08/18/2026,,TRUE
+jjackson,"Jackson, Joseph",E101588,Operations,User,TRUE,03/20/2015,08/06/2026,06/23/2026,Server Operators,FALSE
+asilva,"Silva, Ashley",E100698,Operations,User,FALSE,06/06/2010,10/08/2024,07/04/2026,,TRUE
+mking,"King, Melissa",E104907,Information Technology,User,TRUE,11/04/2020,08/07/2026,05/10/2026,,TRUE
+brossi,"Rossi, Betty",E101350,Sales,User,TRUE,06/02/2011,03/26/2026,05/10/2026,,TRUE
+pjones,"Jones, Priya",E101958,Information Technology,User,TRUE,05/12/2022,07/11/2024,04/11/2026,Server Operators,TRUE
+krobinson,"Robinson, Karen",E101293,Sales,User,TRUE,04/15/2021,07/27/2026,06/17/2026,,FALSE
+aadams3,"Adams, Amanda",E105320,Operations,User,FALSE,01/12/2023,05/05/2024,06/20/2026,,TRUE
+slopez2,"Lopez, Sarah",E105277,Engineering,User,TRUE,08/12/2012,08/17/2026,03/16/2026,,TRUE
+ahall2,"Hall, Amanda",E104665,Sales,User,TRUE,06/30/2009,08/15/2026,06/17/2026,,TRUE
+ryoung2,"Young, Richard",E101790,Information Technology,User,TRUE,09/01/2009,07/09/2026,05/06/2024,Firewall_Admins,TRUE
+mandersson2,"Andersson, Margaret",E103111,Sales,User,TRUE,11/18/2019,08/02/2026,06/30/2026,,TRUE
+pnelson,"Nelson, Priya",E101019,Legal & Compliance,User,TRUE,09/12/2011,07/25/2026,08/11/2026,,TRUE
+sclark,"Clark, Sofia",E103331,Human Resources,User,TRUE,10/22/2022,07/23/2026,07/23/2026,,FALSE
+chernandez,"Hernandez, Chloe",E103505,Engineering,User,FALSE,10/03/2025,07/29/2026,06/08/2026,,TRUE
+amartin,"Martin, Amanda",E101947,Engineering,User,FALSE,10/02/2023,08/12/2026,08/19/2024,,TRUE
+aallen,"Allen, Anthony",E103701,Human Resources,User,TRUE,06/24/2010,07/03/2026,06/24/2026,,TRUE
+dflores,"Flores, Diego",E101380,Engineering,User,TRUE,12/30/2016,08/28/2026,08/13/2026,,TRUE
+emoore,"Moore, Elena",E102445,Operations,User,TRUE,03/18/2014,10/17/2025,12/02/2022,,TRUE
+bhill,"Hill, Brian",E100994,Operations,User,FALSE,05/25/2024,07/14/2026,06/01/2026,,TRUE
+etorres,"Torres, Elizabeth",E103212,Engineering,User,TRUE,02/27/2010,07/18/2026,03/03/2026,,TRUE
+mwalker,"Walker, Maria",E101853,Finance,User,TRUE,05/06/2025,07/24/2026,06/25/2026,,TRUE
+jjones,"Jones, Jennifer",E103465,Engineering,User,TRUE,08/15/2009,08/10/2026,07/12/2026,,TRUE
+abaker,"Baker, Andrew",E102786,Information Technology,User,TRUE,07/20/2014,07/22/2026,03/06/2026,Server Operators,TRUE
+njohnson,"Johnson, Nancy",E101710,Sales,User,TRUE,07/31/2009,07/01/2026,06/06/2026,,TRUE
+wcampbell,"Campbell, Wei",E101116,Sales,User,TRUE,01/20/2022,08/07/2026,06/12/2026,,TRUE
+kwright3,"Wright, Kwame",E103869,Marketing,User,TRUE,10/07/2011,08/05/2026,10/17/2025,,TRUE
+rnelson,"Nelson, Rebecca",E104717,Information Technology,User,TRUE,12/24/2018,05/01/2026,03/03/2026,,TRUE
+kmartin,"Martin, Karen",E104528,Finance,User,TRUE,04/06/2025,08/20/2026,07/08/2026,,TRUE
+jallen,"Allen, Joseph",E100007,Information Technology,User,TRUE,03/06/2012,08/24/2026,07/08/2024,,TRUE
+mbaker,"Baker, Matthew",E102276,Operations,User,TRUE,04/14/2017,08/23/2026,03/02/2025,,TRUE
+knelson,"Nelson, Kevin",E102405,Operations,User,TRUE,08/04/2015,07/24/2026,06/29/2026,,TRUE
+dyoung,"Young, David",E101068,Sales,User,TRUE,06/07/2017,07/18/2026,07/30/2026,,FALSE
+dmartin,"Martin, Donald",E102066,Customer Service,User,TRUE,11/23/2019,04/04/2026,06/10/2026,Server Operators,TRUE
+canderson,"Anderson, Charles",E101329,Engineering,User,TRUE,03/22/2014,07/15/2026,07/14/2026,,TRUE
+nlee,"Lee, Nia",E100149,Marketing,User,TRUE,11/15/2018,07/27/2026,06/24/2026,,TRUE
+wjohnson2,"Johnson, William",E104850,Engineering,User,TRUE,02/23/2013,10/04/2025,06/16/2026,,TRUE
+dtaylor,"Taylor, Donna",E102140,Legal & Compliance,User,TRUE,09/20/2015,08/12/2026,06/11/2026,,TRUE
+shared_warehouse,Shared - Warehouse Terminal,,Operations,Shared,TRUE,08/06/2024,06/08/2026,11/29/2024,Backup Operators,FALSE
+pwilson,"Wilson, Patricia",E100884,Engineering,User,TRUE,02/06/2010,07/15/2026,03/03/2024,,TRUE
+kdavis2,"Davis, Kwame",E103577,Customer Service,User,TRUE,07/13/2010,07/15/2024,06/02/2026,,TRUE
+amartinez,"Martinez, Anthony",E104899,Information Technology,User,TRUE,12/14/2019,08/21/2026,11/06/2025,ERP_Superuser,FALSE
+rnovak,"Novak, Robert",E105062,Customer Service,User,TRUE,05/09/2026,08/26/2026,06/03/2026,,TRUE
+mcampbell,"Campbell, Mark",E101168,Engineering,User,TRUE,04/02/2013,07/19/2026,02/21/2026,ERP_Superuser,TRUE
+cyoung,"Young, Chloe",E103240,Sales,User,FALSE,03/11/2018,11/27/2025,01/05/2026,,TRUE
+snovak,"Novak, Steven",E100578,Sales,User,TRUE,12/28/2018,02/19/2024,08/17/2026,,TRUE
+rwalker,"Walker, Ravi",E100338,Finance,User,TRUE,03/05/2016,06/30/2026,07/09/2026,,TRUE
+aadams,"Adams, Anika",E100892,Sales,User,TRUE,12/01/2016,07/20/2026,08/16/2026,,TRUE
+alewis,"Lewis, Ahmed",E104644,Sales,User,FALSE,01/12/2023,03/05/2025,12/10/2025,,TRUE
+kthompson,"Thompson, Kimberly",E103010,Engineering,User,TRUE,06/07/2022,08/21/2026,03/13/2026,,FALSE
+mlopez,"Lopez, Mateo",E100280,Finance,User,TRUE,01/21/2019,07/21/2026,08/27/2026,Backup Operators,TRUE
+dallen,"Allen, Donald",E101105,Operations,User,TRUE,10/03/2017,12/29/2025,05/12/2026,,FALSE
+crossi,"Rossi, Carol",E104784,Marketing,User,TRUE,08/07/2013,07/03/2026,08/24/2026,,TRUE
+bkowalski,"Kowalski, Betty",E100686,Sales,User,TRUE,02/05/2017,08/02/2026,08/24/2026,,FALSE
+twalker,"Walker, Tomas",E103831,Engineering,User,FALSE,12/14/2014,02/05/2026,07/08/2026,,TRUE
+svc_sqlagent,Service - SQL Agent,,Information Technology,Service,TRUE,04/19/2020,04/24/2025,10/04/2020,,FALSE
+mgreen3,"Green, Mateo",E105008,Marketing,User,FALSE,04/07/2020,04/17/2025,07/26/2026,,TRUE
+jrossi2,"Rossi, Jessica",E105194,Human Resources,User,TRUE,10/20/2009,08/26/2026,07/30/2026,,FALSE
+dhall,"Hall, Daniel",E101521,Information Technology,User,TRUE,02/21/2018,07/13/2026,07/19/2026,,FALSE
+cscott,"Scott, Christopher",E100268,Sales,User,FALSE,04/26/2022,05/08/2024,05/28/2025,,TRUE
+kjohnson,"Johnson, Kevin",E102679,Information Technology,User,FALSE,10/30/2014,08/29/2026,08/18/2026,,TRUE
+mthomas2,"Thomas, Melissa",E103844,Sales,User,TRUE,12/10/2023,03/27/2026,08/07/2026,,TRUE
+dwalker2,"Walker, Diego",E104270,Marketing,User,TRUE,01/12/2016,08/20/2026,08/12/2026,,TRUE
+randersson,"Andersson, Robert",E100558,Operations,User,TRUE,01/27/2013,08/17/2026,07/14/2026,,TRUE
+rmartinez,"Martinez, Ravi",E101671,Engineering,User,TRUE,11/30/2015,08/14/2026,12/21/2025,,TRUE
+drodriguez,"Rodriguez, Daniel",E100302,Information Technology,User,TRUE,07/23/2016,07/11/2026,07/02/2026,,TRUE
+spatel,"Patel, Sarah",E104556,Operations,User,TRUE,03/12/2020,08/05/2026,08/22/2026,,FALSE
+rlewis,"Lewis, Robert",E102603,Finance,User,TRUE,10/14/2023,08/14/2026,09/02/2025,,TRUE
+cwhite,"White, Christopher",E103977,Sales,User,TRUE,10/01/2015,08/16/2026,12/16/2025,,TRUE
+jnovak,"Novak, Joshua",E105090,Finance,User,TRUE,04/10/2020,08/18/2026,02/17/2026,,TRUE
+cdavis,"Davis, Carol",E103237,Information Technology,User,TRUE,02/14/2016,06/17/2025,07/17/2026,ERP_Superuser,TRUE
+rthompson2,"Thompson, Ravi",E103776,Human Resources,User,TRUE,12/14/2010,08/23/2026,07/11/2026,,TRUE
+mjohnson,"Johnson, Melissa",E105302,Sales,User,TRUE,05/19/2023,08/02/2026,05/14/2024,,TRUE
+eallen,"Allen, Emily",E101443,Finance,User,TRUE,07/06/2014,07/17/2026,08/04/2026,,TRUE
+ljackson,"Jackson, Lisa",E103627,Information Technology,User,TRUE,11/15/2015,08/21/2026,04/20/2023,,TRUE
+mtorres,"Torres, Melissa",E100806,Customer Service,User,TRUE,03/05/2022,10/06/2025,07/29/2026,,TRUE
+mroberts,"Roberts, Melissa",E102101,Customer Service,User,TRUE,12/18/2023,07/09/2026,06/07/2026,,TRUE
+ldubois,"Dubois, Lisa",E104800,Engineering,User,TRUE,02/27/2011,07/31/2026,06/28/2026,,TRUE
+lmoore,"Moore, Lisa",E102876,Legal & Compliance,User,TRUE,10/17/2013,08/20/2026,05/31/2023,,TRUE
+kperez,"Perez, Kwame",E100484,Engineering,User,TRUE,03/01/2019,04/24/2025,08/07/2026,,TRUE
+rroberts,"Roberts, Robert",E104812,Customer Service,User,TRUE,04/17/2013,07/27/2026,07/02/2026,,TRUE
+manderson2,"Anderson, Matthew",E104338,Marketing,User,TRUE,03/28/2021,08/08/2026,06/05/2026,,TRUE
+khall2,"Hall, Karen",E102454,Information Technology,User,TRUE,06/03/2020,08/03/2026,06/01/2024,,TRUE
+mrobinson,"Robinson, Mateo",E102294,Engineering,User,TRUE,03/19/2014,07/03/2026,08/13/2026,,TRUE
+iharris,"Harris, Ingrid",E104838,Operations,User,TRUE,08/06/2017,08/03/2026,07/21/2026,,TRUE
+shaddad,"Haddad, Sarah",E100227,Customer Service,User,FALSE,07/08/2012,05/09/2026,10/18/2025,,FALSE
+kwright,"Wright, Kenneth",E101658,Engineering,User,TRUE,07/27/2018,07/12/2026,07/29/2026,,TRUE
+wmiller,"Miller, Wei",E101269,Engineering,User,TRUE,01/14/2009,07/11/2026,01/09/2026,,TRUE
+frossi,"Rossi, Fatima",E102903,Customer Service,User,TRUE,03/30/2017,07/28/2026,08/26/2026,,TRUE
+wjones,"Jones, Wei",E103280,Marketing,User,TRUE,12/28/2020,07/06/2026,08/21/2026,,TRUE
+crivera,"Rivera, Charles",E104687,Engineering,User,TRUE,06/21/2023,08/26/2026,06/26/2026,Firewall_Admins,FALSE
+storres,"Torres, Sarah",E101084,Information Technology,User,TRUE,05/18/2010,08/05/2026,03/24/2026,Server Operators,FALSE
+tandersson,"Andersson, Tomas",E101450,Engineering,User,TRUE,06/07/2024,07/11/2026,05/13/2026,,TRUE
+clopez,"Lopez, Charles",E103003,Engineering,User,TRUE,06/30/2018,08/29/2026,11/02/2025,,TRUE
+tallen,"Allen, Thomas",E103427,Information Technology,User,FALSE,08/26/2011,04/08/2026,08/12/2026,Firewall_Admins,TRUE
+jrossi,"Rossi, Joseph",E102832,Legal & Compliance,User,TRUE,05/19/2015,07/11/2026,07/28/2026,,TRUE
+ynelson,"Nelson, Yuki",E101693,Sales,User,FALSE,01/14/2019,10/07/2025,12/03/2025,,TRUE
+mmartin2,"Martin, Mateo",E103772,Information Technology,User,FALSE,07/05/2025,03/18/2026,05/06/2026,Backup Operators,FALSE
+jcampbell,"Campbell, James",E102519,Engineering,User,TRUE,10/21/2021,08/02/2026,07/16/2026,,TRUE
+jroberts,"Roberts, Jennifer",E101922,Engineering,User,TRUE,06/09/2011,07/16/2026,11/12/2025,Server Operators,TRUE
+wperez,"Perez, Wei",E100134,Finance,User,FALSE,07/11/2015,07/26/2025,07/05/2026,,FALSE
+droberts2,"Roberts, Donna",E104400,Operations,User,FALSE,06/30/2019,12/12/2025,09/11/2025,,TRUE
+kbaker,"Baker, Karen",E101989,Legal & Compliance,User,TRUE,04/16/2021,07/30/2026,09/24/2025,,TRUE
+inovak,"Novak, Ivan",E102233,Engineering,User,FALSE,02/02/2019,04/29/2026,06/14/2026,,TRUE
+ehernandez,"Hernandez, Emily",E102132,Operations,User,TRUE,10/14/2020,08/24/2026,08/12/2026,,TRUE
+tyoung,"Young, Thomas",E102307,Operations,User,TRUE,12/28/2010,07/17/2026,06/10/2026,,TRUE
+aadams2,"Adams, Andrew",E101892,Operations,User,TRUE,05/24/2026,08/15/2026,05/24/2026,,TRUE
+iramirez,"Ramirez, Ingrid",E102328,Operations,User,TRUE,08/04/2010,08/05/2026,07/25/2026,,TRUE
+ewalker,"Walker, Elizabeth",E101286,Information Technology,User,TRUE,12/19/2020,09/30/2025,04/25/2026,,TRUE
+ikowalski,"Kowalski, Ingrid",E101467,Human Resources,User,TRUE,09/09/2009,08/20/2026,05/09/2026,,TRUE
+mtaylor,"Taylor, Michael",E100989,Information Technology,User,TRUE,02/19/2017,08/06/2026,07/07/2026,,TRUE
+tthomas2,"Thomas, Thomas",E101620,Finance,User,TRUE,11/18/2015,07/09/2026,09/24/2025,,TRUE
+jpatel,"Patel, James",E102920,Engineering,User,TRUE,05/16/2022,07/30/2026,02/15/2025,,FALSE
+nthompson,"Thompson, Nancy",E101637,Engineering,User,TRUE,08/06/2013,08/17/2026,08/09/2026,,TRUE
+zdavis,"Davis, Zara",E104668,Operations,User,TRUE,12/02/2014,08/08/2026,06/06/2026,,TRUE
+lpatel,"Patel, Linda",E103345,Customer Service,User,TRUE,10/28/2011,08/15/2026,04/16/2025,,FALSE
+wthomas,"Thomas, Wei",E104807,Engineering,User,FALSE,07/28/2014,02/12/2026,08/15/2026,,TRUE
+pkowalski,"Kowalski, Patricia",E104525,Customer Service,User,TRUE,09/19/2025,08/03/2026,09/19/2025,,FALSE
+plopez,"Lopez, Paul",E103955,Operations,User,TRUE,04/19/2012,07/31/2026,08/19/2026,,TRUE
+adubois,"Dubois, Ashley",E105080,Engineering,User,TRUE,12/22/2013,07/02/2026,04/17/2024,,TRUE
+arivera,"Rivera, Anika",E103153,Operations,User,TRUE,10/02/2019,07/16/2026,10/06/2025,,TRUE
+pwalker,"Walker, Patricia",E101540,Marketing,User,TRUE,10/27/2013,08/15/2026,07/09/2026,,TRUE
+rperez,"Perez, Rebecca",E103792,Operations,User,TRUE,06/10/2022,07/26/2026,02/25/2026,,TRUE
+dadams,"Adams, David",E103451,Operations,User,TRUE,06/04/2020,07/28/2026,03/25/2026,,TRUE
+kscott,"Scott, Kwame",E103799,Finance,User,FALSE,12/15/2011,07/16/2026,09/08/2025,,TRUE
+bclark,"Clark, Brian",E102472,Customer Service,User,TRUE,07/04/2020,02/19/2026,11/03/2025,,TRUE
+rmartinez2,"Martinez, Rebecca",E105281,Sales,User,TRUE,07/21/2010,07/08/2026,06/10/2026,,TRUE
+arobinson,"Robinson, Amanda",E104583,Operations,User,FALSE,09/24/2009,09/25/2025,06/09/2026,,TRUE
+grobinson,"Robinson, George",E100294,Information Technology,User,TRUE,03/14/2010,08/11/2026,07/01/2026,,TRUE
+psanchez,"Sanchez, Patricia",E100531,Human Resources,User,TRUE,02/26/2023,07/06/2026,11/30/2025,,TRUE
+twright,"Wright, Timothy",E102219,Information Technology,User,TRUE,05/22/2023,10/17/2025,10/21/2025,ERP_Superuser,TRUE
+ssilva2,"Silva, Sofia",E105236,Operations,User,TRUE,09/09/2012,08/03/2026,03/31/2026,,TRUE
+kcampbell,"Campbell, Kenneth",E104059,Marketing,User,TRUE,07/07/2011,07/24/2026,08/08/2026,,TRUE
+cscott2,"Scott, Chloe",E102549,Engineering,User,FALSE,01/08/2013,01/14/2024,01/01/2024,,FALSE
+slewis,"Lewis, Stephanie",E102071,Engineering,User,TRUE,08/18/2011,07/26/2026,08/07/2026,,FALSE
+jgarcia,"Garcia, Joseph",E101491,Human Resources,User,FALSE,09/03/2023,05/30/2025,07/18/2026,,TRUE
+tnguyen,"Nguyen, Timothy",E103816,Sales,User,TRUE,03/02/2020,07/08/2026,07/08/2026,,TRUE
+lgreen,"Green, Lisa",E100917,Sales,User,TRUE,01/25/2019,07/01/2026,01/03/2025,,FALSE
+kdavis,"Davis, Kevin",E100510,Information Technology,User,TRUE,12/17/2016,07/11/2026,07/25/2026,,TRUE
+kgarcia,"Garcia, Kimberly",E100637,Engineering,User,TRUE,03/01/2025,08/18/2026,05/10/2026,,TRUE
+asmith,"Smith, Amanda",E105024,Sales,User,TRUE,10/14/2018,07/02/2026,07/11/2026,,TRUE
+ahall,"Hall, Anika",E102423,Sales,User,FALSE,05/18/2012,08/18/2026,07/24/2026,,FALSE
+cjones,"Jones, Christopher",E102153,Engineering,User,TRUE,12/19/2024,08/27/2026,12/19/2024,,FALSE
+cking,"King, Carol",E104416,Legal & Compliance,User,TRUE,01/01/2018,07/29/2026,07/04/2023,,TRUE
+ihill,"Hill, Ingrid",E105380,Sales,User,TRUE,11/02/2019,08/04/2026,08/03/2026,,FALSE
+lrivera,"Rivera, Lisa",E102114,Information Technology,User,TRUE,08/09/2013,07/04/2026,01/05/2026,SQL_DBA_Admins,TRUE
+vendor_acme_sup,Vendor - ACME Support,,Information Technology,User,TRUE,10/19/2016,03/07/2025,02/26/2017,ERP_Superuser,FALSE
+sflores,"Flores, Susan",E103057,Engineering,User,TRUE,10/18/2025,07/03/2026,05/04/2026,,TRUE
+pwalker2,"Walker, Paul",E104565,Operations,User,TRUE,01/01/2018,07/02/2026,06/10/2026,,TRUE
+jjackson2,"Jackson, James",E104397,Finance,User,TRUE,05/15/2022,06/20/2025,04/23/2026,,TRUE
+kjackson,"Jackson, Kenneth",E104297,Operations,User,TRUE,05/01/2018,07/03/2026,06/22/2026,,TRUE
+pjones2,"Jones, Patricia",E101980,Human Resources,User,TRUE,02/11/2017,06/30/2026,05/03/2026,,TRUE
+aflores,"Flores, Andrew",E103023,Customer Service,User,FALSE,09/06/2020,11/03/2024,06/19/2026,,TRUE
+imitchell,"Mitchell, Ingrid",E100935,Finance,User,TRUE,11/20/2014,08/03/2026,10/12/2024,,TRUE
+bnguyen2,"Nguyen, Betty",E104184,Marketing,User,TRUE,12/27/2024,08/10/2026,06/28/2026,,TRUE
+mkimura,"Kimura, Matthew",E101027,Engineering,User,FALSE,06/24/2016,06/23/2026,05/01/2026,,TRUE
+escott2,"Scott, Elena",E105398,Engineering,User,TRUE,07/05/2010,01/23/2026,07/25/2026,,TRUE
+dlopez2,"Lopez, Diego",E100857,Customer Service,User,TRUE,01/21/2010,02/18/2026,04/17/2026,,TRUE
+cnelson,"Nelson, Chloe",E104130,Operations,User,TRUE,09/14/2020,12/25/2024,04/19/2024,Server Operators,TRUE
+manderson,"Anderson, Melissa",E104067,Engineering,User,TRUE,11/18/2012,07/03/2026,06/18/2026,,TRUE
+lroberts,"Roberts, Lisa",E103531,Information Technology,User,TRUE,08/31/2011,07/09/2026,07/17/2026,SQL_DBA_Admins,TRUE
+psmith,"Smith, Priya",E105134,Customer Service,User,TRUE,04/03/2018,07/01/2026,06/02/2026,,TRUE
+mmoore,"Moore, Maria",E100824,Engineering,User,TRUE,12/23/2015,08/10/2026,06/16/2026,,TRUE
+shared_frontdesk,Shared - Front Desk Kiosk,,Operations,Shared,FALSE,02/28/2023,08/26/2025,05/05/2023,,FALSE
+rhall2,"Hall, Rebecca",E102434,Operations,User,TRUE,02/27/2013,08/23/2026,07/03/2026,,TRUE
+ayoung,"Young, Anika",E100309,Information Technology,User,TRUE,02/29/2024,08/06/2026,08/31/2025,,FALSE
+pmartinez,"Martinez, Priya",E102529,Marketing,User,TRUE,01/29/2020,07/24/2026,08/19/2026,,TRUE
+oroberts,"Roberts, Omar",E104649,Customer Service,User,TRUE,04/03/2022,07/12/2026,04/07/2026,,TRUE
+lking,"King, Linda",E101110,Marketing,User,TRUE,01/17/2021,08/18/2026,11/26/2025,,TRUE
+mrossi2,"Rossi, Mark",E104032,Sales,User,TRUE,09/10/2022,07/25/2026,08/20/2026,,FALSE
+lnelson,"Nelson, Linda",E103920,Engineering,User,TRUE,09/06/2017,08/01/2026,02/09/2026,,TRUE
+jcarter,"Carter, Jessica",E105099,Engineering,User,TRUE,07/30/2011,11/18/2025,10/07/2025,,TRUE
+dwilliams,"Williams, Donald",E103145,Information Technology,User,TRUE,04/03/2012,12/24/2025,06/11/2026,SQL_DBA_Admins,TRUE
+kbrown2,"Brown, Kwame",E104369,Sales,User,TRUE,02/18/2021,08/20/2026,07/05/2026,,TRUE
+rkowalski,"Kowalski, Rebecca",E100609,Legal & Compliance,User,TRUE,06/30/2011,08/06/2026,11/09/2023,,TRUE
+ctorres,"Torres, Christopher",E100520,Sales,User,FALSE,03/26/2021,01/18/2025,08/27/2026,,TRUE
+asilva2,"Silva, Andrew",E101326,Information Technology,User,FALSE,12/26/2009,08/17/2025,09/16/2023,,TRUE
+cgonzalez,"Gonzalez, Christopher",E104621,Engineering,User,TRUE,03/18/2020,07/22/2026,11/07/2025,,TRUE
+wandersson,"Andersson, William",E104444,Finance,User,TRUE,08/29/2024,08/10/2026,09/25/2025,,TRUE
+jlopez,"Lopez, James",E100847,Marketing,User,TRUE,07/05/2016,07/19/2026,05/06/2026,,TRUE
+bwalker,"Walker, Betty",E102375,Engineering,User,TRUE,04/07/2012,08/29/2026,08/17/2026,,TRUE
+sokafor,"Okafor, Susan",E104000,Marketing,User,TRUE,01/02/2024,08/09/2026,08/19/2026,,TRUE
+elewis,"Lewis, Elizabeth",E103395,Information Technology,User,TRUE,05/04/2019,07/01/2026,07/07/2026,,TRUE
+tbrown,"Brown, Tomas",E103652,Operations,User,TRUE,04/25/2014,07/01/2026,11/29/2025,,TRUE
+awright,"Wright, Anika",E101800,Information Technology,User,TRUE,07/20/2013,08/11/2026,08/10/2026,,TRUE
+sbaker,"Baker, Sarah",E103030,Human Resources,User,TRUE,06/07/2011,07/29/2026,07/18/2026,,TRUE
+lscott,"Scott, Lisa",E105351,Sales,User,FALSE,08/11/2015,07/17/2025,12/26/2025,,TRUE
+pking,"King, Paul",E105036,Human Resources,User,FALSE,11/19/2013,04/27/2025,07/04/2026,,TRUE
+cjohnson,"Johnson, Charles",E103981,Sales,User,TRUE,05/26/2017,07/19/2026,01/17/2026,,TRUE
+amiller,"Miller, Amanda",E101514,Sales,User,FALSE,06/23/2019,03/27/2026,03/22/2026,,TRUE
+rmartin,"Martin, Ravi",E100401,Information Technology,User,FALSE,05/21/2019,07/01/2026,01/15/2026,,TRUE
+svc_backup_prd,Service - Veeam Backup,,Information Technology,Service,TRUE,03/28/2020,07/20/2026,09/23/2020,,FALSE
+mnovak2,"Novak, Mateo",E102269,Information Technology,User,TRUE,08/14/2010,08/09/2026,10/15/2025,Domain Admins,FALSE
+awright2,"Wright, Andrew",E101937,Engineering,User,TRUE,02/07/2024,07/19/2026,08/18/2026,,TRUE
+msmith,"Smith, Michael",E102771,Sales,User,TRUE,11/02/2016,07/31/2026,07/07/2026,,TRUE
+dharris,"Harris, Donald",E102389,Operations,User,TRUE,05/25/2014,06/30/2026,08/17/2026,,TRUE
+mallen,"Allen, Margaret",E102732,Information Technology,User,TRUE,10/22/2009,01/09/2026,03/08/2026,,FALSE
+tmitchell,"Mitchell, Tomas",E103928,Sales,User,TRUE,11/17/2024,07/04/2026,01/24/2026,,FALSE
+jwilson,"Wilson, James",E101231,Human Resources,User,TRUE,04/14/2018,08/12/2026,07/17/2026,,TRUE
+zgreen,"Green, Zara",E101813,Information Technology,User,TRUE,05/09/2009,07/23/2026,06/19/2026,ERP_Superuser,TRUE
+tgreen,"Green, Timothy",E103107,Operations,User,TRUE,07/23/2015,07/19/2026,02/04/2026,,TRUE
+kbrown,"Brown, Kimberly",E104071,Operations,User,TRUE,03/18/2022,06/30/2026,08/12/2025,,TRUE
+mramirez2,"Ramirez, Mateo",E100829,Human Resources,User,TRUE,09/22/2022,07/12/2026,02/14/2023,,TRUE
+mclark2,"Clark, Maria",E104279,Information Technology,User,TRUE,02/10/2018,07/03/2026,12/01/2025,Backup Operators,TRUE
+akimura,"Kimura, Anika",E102106,Engineering,User,TRUE,02/18/2023,08/17/2026,07/29/2026,,TRUE
+rwilliams,"Williams, Ronald",E104325,Customer Service,User,TRUE,10/31/2019,08/26/2026,07/26/2026,,TRUE
+dflores2,"Flores, Donald",E104051,Customer Service,User,FALSE,03/29/2019,08/15/2026,01/23/2023,,FALSE
+bgonzalez,"Gonzalez, Betty",E102801,Finance,User,TRUE,02/26/2009,06/30/2026,07/03/2026,,FALSE
+rgonzalez2,"Gonzalez, Richard",E105045,Finance,User,FALSE,02/22/2012,01/16/2024,12/23/2025,,TRUE
+phaddad,"Haddad, Paul",E102351,Information Technology,User,TRUE,07/29/2014,07/12/2026,01/26/2026,Domain Admins,FALSE
+mclark,"Clark, Melissa",E102030,Marketing,User,FALSE,08/08/2025,08/20/2026,08/08/2025,,TRUE
+sperez,"Perez, Susan",E104225,Legal & Compliance,User,TRUE,05/19/2025,08/02/2026,07/04/2026,,TRUE
+dnovak,"Novak, Diego",E101040,Customer Service,User,TRUE,05/13/2014,07/01/2026,02/16/2026,,TRUE
+lnguyen,"Nguyen, Luca",E100052,Operations,User,TRUE,12/04/2016,07/11/2026,06/13/2026,,TRUE
+abaker3,"Baker, Amanda",E105124,Engineering,User,TRUE,01/22/2023,07/01/2026,04/16/2026,,TRUE
+cmoore,"Moore, Carol",E103457,Engineering,User,TRUE,09/16/2015,07/19/2026,06/11/2026,,TRUE
+tgarcia,"Garcia, Tomas",E104943,Information Technology,User,TRUE,05/10/2009,08/23/2026,08/24/2026,,FALSE
+skowalski3,"Kowalski, Sarah",E103891,Engineering,User,FALSE,12/28/2025,04/10/2026,06/21/2026,,TRUE
+srodriguez,"Rodriguez, Sandra",E102972,Operations,User,FALSE,02/18/2010,07/14/2026,10/14/2025,,TRUE
+rhall,"Hall, Ronald",E101414,Information Technology,User,TRUE,08/22/2025,08/23/2026,07/26/2026,Domain Admins,FALSE
+dmoore,"Moore, Daniel",E101681,Sales,User,TRUE,01/25/2025,08/15/2026,06/02/2026,,TRUE
+mhall,"Hall, Mateo",E102211,Marketing,User,TRUE,08/17/2012,08/27/2026,06/26/2026,,TRUE
+anelson,"Nelson, Amanda",E104597,Engineering,User,TRUE,04/26/2024,07/19/2026,08/12/2026,,TRUE
+lnelson2,"Nelson, Luca",E104486,Marketing,User,TRUE,04/10/2019,08/21/2026,01/15/2026,,TRUE
+ksanchez,"Sanchez, Kenneth",E104822,Engineering,User,TRUE,06/24/2012,08/12/2026,05/27/2026,Firewall_Admins,FALSE
+cjackson,"Jackson, Christopher",E103089,Sales,User,TRUE,12/14/2013,11/20/2025,09/15/2025,,TRUE
+mdavis,"Davis, Mark",E101199,Information Technology,User,TRUE,10/07/2017,07/18/2026,06/07/2026,,TRUE
+cthomas,"Thomas, Christopher",E104733,Engineering,User,TRUE,12/06/2011,08/16/2026,06/02/2026,,TRUE
+sthomas,"Thomas, Steven",E102934,Engineering,User,TRUE,08/14/2013,08/19/2026,07/20/2026,,TRUE
+llewis,"Lewis, Luca",E100115,Engineering,User,TRUE,04/15/2012,08/21/2026,04/19/2026,,TRUE
+djohnson2,"Johnson, Donna",E102084,Sales,User,FALSE,06/28/2009,08/13/2026,06/01/2026,,TRUE
+asanchez,"Sanchez, Amanda",E103067,Customer Service,User,TRUE,11/24/2017,08/24/2026,07/20/2026,,TRUE
+lokafor,"Okafor, Luca",E105249,Finance,User,TRUE,11/23/2023,07/02/2026,07/29/2026,,TRUE
+aclark,"Clark, Andrew",E104880,Engineering,User,TRUE,04/01/2018,07/06/2026,02/23/2026,,TRUE
+phall,"Hall, Paul",E102005,Engineering,User,TRUE,07/25/2025,10/31/2025,08/13/2026,,TRUE
+athomas,"Thomas, Andrew",E103623,Legal & Compliance,User,FALSE,03/20/2023,11/29/2025,12/17/2025,,FALSE
+awilson,"Wilson, Andrew",E102955,Customer Service,User,TRUE,07/23/2010,08/12/2026,04/11/2026,,TRUE
+mandersson,"Andersson, Maria",E103083,Operations,User,TRUE,09/07/2021,07/25/2026,07/30/2026,,TRUE
+ahernandez,"Hernandez, Andrew",E103217,Finance,User,TRUE,10/25/2012,08/11/2026,10/29/2024,,TRUE
+amartin3,"Martin, Ashley",E104193,Information Technology,User,TRUE,05/29/2011,07/01/2026,01/07/2023,,TRUE
+bhall,"Hall, Brian",E103646,Customer Service,User,TRUE,02/28/2025,08/26/2026,06/09/2026,,TRUE
+agarcia2,"Garcia, Ashley",E103297,Engineering,User,TRUE,04/29/2019,07/13/2026,06/17/2026,,TRUE
+rwilson,"Wilson, Rebecca",E102033,Sales,User,TRUE,06/01/2009,08/10/2026,10/18/2025,,TRUE
+mhaddad,"Haddad, Mark",E100419,Engineering,User,TRUE,12/06/2011,08/20/2026,08/04/2026,,TRUE
+ptaylor,"Taylor, Paul",E101309,Sales,User,FALSE,05/12/2020,10/07/2025,08/05/2026,,TRUE
+mharris,"Harris, Margaret",E103517,Operations,User,TRUE,04/17/2009,07/30/2026,06/16/2026,,TRUE
+jbrown,"Brown, Joshua",E105267,Customer Service,User,TRUE,11/16/2025,08/08/2026,08/23/2026,,TRUE
+othompson,"Thompson, Omar",E104168,Sales,User,TRUE,08/02/2011,07/24/2026,02/15/2026,,TRUE
+ladams,"Adams, Lisa",E104256,Operations,User,TRUE,06/11/2022,08/04/2026,06/29/2026,,TRUE
+danderson,"Anderson, Deborah",E100426,Engineering,User,TRUE,08/28/2018,07/29/2026,04/14/2026,,TRUE
+pbrown,"Brown, Paul",E100262,Marketing,User,TRUE,01/21/2020,07/21/2026,11/16/2025,,TRUE
+orobinson,"Robinson, Omar",E103719,Customer Service,User,TRUE,11/09/2018,07/21/2026,07/12/2026,,FALSE
+wmitchell,"Mitchell, Wei",E105033,Sales,User,TRUE,10/01/2016,07/24/2026,07/09/2026,,FALSE
+ahill,"Hill, Anthony",E102749,Human Resources,User,TRUE,02/09/2021,07/27/2026,01/19/2026,,TRUE
+rmartin2,"Martin, Richard",E102418,Engineering,User,TRUE,12/09/2016,07/30/2026,06/18/2026,Domain Admins,TRUE
+pthompson2,"Thompson, Paul",E101746,Operations,User,TRUE,08/19/2021,08/04/2026,08/13/2026,,TRUE
+rlewis2,"Lewis, Rebecca",E103128,Human Resources,User,FALSE,12/09/2012,07/15/2026,07/05/2026,,TRUE
+pallen,"Allen, Patricia",E102251,Sales,User,TRUE,06/18/2017,07/03/2026,08/14/2026,,TRUE
+lallen,"Allen, Linda",E104379,Finance,User,TRUE,07/28/2022,08/25/2026,07/24/2026,,TRUE
+abaker2,"Baker, Anthony",E102846,Legal & Compliance,User,TRUE,03/14/2016,08/04/2026,01/24/2026,,TRUE
+mcampbell2,"Campbell, Michael",E101805,Customer Service,User,TRUE,03/21/2021,08/17/2026,07/11/2025,,TRUE
+egonzalez,"Gonzalez, Emily",E102321,Marketing,User,TRUE,05/30/2022,07/30/2026,04/07/2025,,TRUE
+kscott2,"Scott, Karen",E104864,Sales,User,TRUE,06/13/2012,07/11/2026,08/11/2026,,TRUE
+dcarter,"Carter, David",E102768,Legal & Compliance,User,TRUE,04/02/2019,07/14/2026,06/15/2026,,TRUE
+tcampbell,"Campbell, Thomas",E101208,Sales,User,TRUE,07/02/2022,07/08/2026,02/25/2026,,TRUE
+droberts,"Roberts, Diego",E102491,Customer Service,User,FALSE,07/02/2019,05/27/2024,02/18/2023,,TRUE
+nrodriguez,"Rodriguez, Nia",E102925,Sales,User,TRUE,06/06/2012,08/20/2026,05/31/2026,,FALSE
+rallen,"Allen, Rebecca",E104539,Engineering,User,TRUE,03/07/2016,08/11/2026,06/05/2026,,TRUE
+esmith,"Smith, Emily",E100325,Marketing,User,TRUE,06/10/2017,07/08/2024,07/18/2023,SQL_DBA_Admins,TRUE
+nkimura,"Kimura, Nia",E103573,Sales,User,TRUE,04/17/2021,07/05/2026,11/29/2025,,TRUE
+pgreen,"Green, Patricia",E101768,Information Technology,User,FALSE,04/24/2013,03/09/2025,05/17/2026,,TRUE
+sdavis,"Davis, Sofia",E100369,Marketing,User,TRUE,11/08/2021,02/13/2026,07/26/2026,,TRUE
+pmoore,"Moore, Patricia",E100715,Operations,User,TRUE,01/26/2016,01/11/2026,08/24/2026,,TRUE
+jwilson3,"Wilson, Jennifer",E103737,Sales,User,TRUE,04/21/2016,08/24/2026,08/07/2026,,TRUE
+djohnson,"Johnson, Donald",E101909,Information Technology,User,TRUE,06/03/2022,07/08/2026,06/12/2026,,TRUE
+rscott,"Scott, Ravi",E103604,Customer Service,User,TRUE,08/24/2017,07/11/2025,06/24/2026,,TRUE
+ejones,"Jones, Elizabeth",E104938,Engineering,User,TRUE,09/14/2016,08/01/2026,07/26/2026,,TRUE
+mhill,"Hill, Margaret",E101932,Engineering,User,TRUE,08/25/2014,07/06/2026,08/14/2026,,TRUE
+lmartin,"Martin, Luca",E102175,Sales,User,TRUE,12/07/2021,08/09/2026,10/01/2025,,TRUE
+kgreen,"Green, Kimberly",E101838,Information Technology,User,TRUE,03/05/2012,07/21/2026,05/08/2026,,TRUE
+rgonzalez,"Gonzalez, Rebecca",E102928,Marketing,User,TRUE,02/13/2014,08/19/2026,08/16/2024,,TRUE
+brodriguez,"Rodriguez, Betty",E103265,Operations,User,TRUE,09/27/2024,07/07/2026,07/11/2026,,TRUE
+tokafor,"Okafor, Thomas",E102170,Finance,User,TRUE,09/03/2017,05/13/2024,07/17/2026,,TRUE
+djones,"Jones, Deborah",E102942,Engineering,User,TRUE,10/24/2012,08/16/2026,06/25/2026,,TRUE
+dandersson,"Andersson, David",E103384,Engineering,User,TRUE,03/08/2009,07/30/2026,05/23/2026,,TRUE
+jyoung,"Young, Joshua",E100058,Information Technology,User,TRUE,10/16/2021,07/23/2026,08/21/2026,,TRUE
+jwhite,"White, James",E101828,Customer Service,User,TRUE,08/03/2016,08/16/2026,11/23/2025,,TRUE
+staylor,"Taylor, Sandra",E103543,Finance,User,TRUE,07/09/2026,07/05/2026,07/09/2026,,TRUE
+acampbell,"Campbell, Andrew",E100082,Engineering,User,TRUE,08/07/2009,07/04/2026,12/13/2025,,TRUE
+mflores,"Flores, Mark",E101483,Sales,User,FALSE,06/24/2013,04/12/2024,07/25/2026,,TRUE
+khall,"Hall, Kenneth",E100209,Sales,User,TRUE,03/01/2012,07/01/2026,07/31/2026,,TRUE
+dcampbell,"Campbell, David",E101177,Finance,User,TRUE,04/07/2012,08/25/2026,07/25/2026,,TRUE
+rdavis,"Davis, Rebecca",E102089,Customer Service,User,TRUE,10/01/2023,07/30/2026,06/21/2026,,TRUE
+cthompson,"Thompson, Carol",E103254,Sales,User,FALSE,07/23/2012,05/28/2026,04/09/2026,,TRUE
+dwalker,"Walker, Deborah",E100728,Engineering,User,TRUE,04/26/2022,08/11/2026,02/27/2026,,TRUE
+myoung,"Young, Mateo",E100548,Engineering,User,TRUE,12/22/2021,07/29/2026,07/15/2026,,TRUE
+ddubois,"Dubois, David",E102024,Engineering,User,TRUE,10/21/2014,08/31/2025,06/21/2026,,TRUE
+ptorres,"Torres, Paul",E102689,Operations,User,TRUE,05/09/2011,01/27/2026,10/22/2024,,TRUE
+ethompson,"Thompson, Emily",E101723,Operations,User,TRUE,02/26/2023,07/24/2026,06/19/2026,,TRUE
+rthomas,"Thomas, Richard",E101164,Operations,User,TRUE,10/05/2018,08/20/2026,06/06/2026,,TRUE
+sjackson,"Jackson, Susan",E102717,Operations,User,TRUE,07/04/2019,08/13/2026,03/05/2026,,TRUE
+dlewis,"Lewis, Donna",E100747,Engineering,User,TRUE,05/20/2018,07/07/2026,07/23/2026,,TRUE
+rcampbell,"Campbell, Ravi",E104859,Engineering,User,TRUE,02/17/2011,07/06/2026,04/15/2026,,TRUE
+escott,"Scott, Elizabeth",E104314,Customer Service,User,FALSE,02/03/2016,02/21/2024,08/28/2026,,TRUE
+scarter,"Carter, Sandra",E101153,Engineering,User,FALSE,05/30/2009,08/29/2025,04/10/2026,,FALSE
+dnelson,"Nelson, Donald",E100244,Operations,User,TRUE,02/15/2021,07/03/2026,07/12/2026,,TRUE
+dlewis2,"Lewis, Donald",E103766,Sales,User,TRUE,01/06/2017,12/21/2025,07/27/2026,,TRUE
+amartin2,"Martin, Anthony",E103409,Information Technology,User,TRUE,02/17/2017,07/29/2026,05/16/2026,Server Operators,TRUE
+slopez,"Lopez, Sandra",E104586,Engineering,User,TRUE,07/21/2016,08/13/2026,12/31/2022,,TRUE
+mgreen,"Green, Mark",E101098,Finance,User,TRUE,05/17/2013,07/29/2026,07/08/2025,,TRUE
+svc_monitoring,Service - Nagios Monitoring,,Information Technology,Service,TRUE,08/21/2019,07/03/2025,01/26/2020,,TRUE
+mmartinez,"Martinez, Mateo",E101510,Operations,User,FALSE,03/19/2026,06/20/2026,08/21/2026,,TRUE
+pwhite,"White, Priya",E104171,Operations,User,TRUE,12/05/2018,07/30/2026,02/14/2026,,TRUE
+tlewis,"Lewis, Timothy",E101088,Legal & Compliance,User,TRUE,10/11/2022,07/02/2026,02/11/2026,,TRUE
+dhaddad2,"Haddad, David",E103875,Information Technology,User,TRUE,03/19/2017,04/01/2024,08/07/2026,,TRUE
+pthompson,"Thompson, Priya",E101574,Marketing,User,FALSE,09/28/2018,01/20/2025,09/12/2024,,TRUE
+mperez,"Perez, Matthew",E100763,Legal & Compliance,User,TRUE,08/02/2023,03/08/2026,05/30/2025,,TRUE
+mthomas,"Thomas, Mark",E100624,Finance,User,TRUE,09/09/2011,07/30/2026,12/25/2024,,TRUE
+esanchez,"Sanchez, Emily",E101607,Engineering,User,TRUE,11/07/2010,08/23/2026,01/18/2026,,TRUE
+zjackson,"Jackson, Zara",E100590,Operations,User,TRUE,01/16/2024,07/27/2026,10/02/2025,,FALSE
+jking,"King, Joseph",E104520,Finance,User,TRUE,06/20/2024,08/03/2026,08/23/2026,,TRUE
+rlopez,"Lopez, Ravi",E103655,Legal & Compliance,User,TRUE,10/18/2018,08/11/2026,02/29/2024,,TRUE
+ndubois,"Dubois, Nia",E100571,Sales,User,TRUE,05/19/2024,07/10/2026,07/13/2026,,TRUE
+dharris2,"Harris, Daniel",E103441,Customer Service,User,TRUE,04/28/2011,03/01/2026,07/05/2026,,TRUE
+shernandez,"Hernandez, Steven",E100373,Engineering,User,TRUE,09/26/2013,08/29/2026,08/27/2026,,TRUE
+gnelson,"Nelson, George",E101563,Finance,User,TRUE,12/29/2018,07/05/2026,07/30/2026,,TRUE
+sgarcia,"Garcia, Stephanie",E102937,Customer Service,User,FALSE,02/26/2021,02/05/2026,06/30/2026,,FALSE
+ajackson,"Jackson, Anika",E104043,Operations,User,TRUE,09/17/2025,03/19/2026,08/12/2026,,TRUE
+cokafor,"Okafor, Christopher",E101781,Marketing,User,TRUE,12/22/2025,07/19/2026,07/11/2026,,TRUE
+tpatel2,"Patel, Thomas",E104709,Sales,User,TRUE,11/30/2016,07/05/2026,02/21/2026,,TRUE
+kdubois,"Dubois, Kwame",E100776,Sales,User,TRUE,03/28/2016,08/26/2026,07/18/2026,,TRUE
+slewis2,"Lewis, Sofia",E102626,Engineering,User,TRUE,10/10/2009,04/13/2026,08/14/2026,,TRUE
+mgonzalez,"Gonzalez, Margaret",E102339,Information Technology,User,TRUE,07/16/2012,08/15/2026,09/16/2025,Firewall_Admins,FALSE
+yrodriguez,"Rodriguez, Yuki",E101604,Information Technology,User,TRUE,06/06/2020,08/06/2026,08/04/2026,,TRUE
+bdubois,"Dubois, Brian",E101705,Information Technology,User,TRUE,12/26/2021,08/27/2026,08/10/2026,Server Operators,TRUE
+ohaddad,"Haddad, Omar",E103231,Operations,User,TRUE,11/01/2019,07/04/2026,04/07/2026,,TRUE
+wkimura,"Kimura, Wei",E105148,Finance,User,TRUE,04/20/2013,07/11/2026,06/27/2026,,TRUE
+jrivera,"Rivera, Jessica",E104833,Customer Service,User,TRUE,06/17/2018,02/25/2026,07/27/2026,,TRUE
+lrossi,"Rossi, Luca",E102607,Sales,User,TRUE,02/26/2009,07/31/2026,04/25/2026,,FALSE
+jgreen,"Green, James",E103183,Sales,User,TRUE,08/24/2021,07/24/2026,05/21/2026,,TRUE
+fbaker,"Baker, Fatima",E101399,Customer Service,User,FALSE,11/08/2021,11/16/2025,12/15/2025,,TRUE
+ybaker,"Baker, Yuki",E103670,Sales,User,TRUE,10/30/2015,02/10/2026,09/28/2025,,TRUE
+wjohnson,"Johnson, Wei",E103688,Sales,User,TRUE,02/27/2017,08/07/2026,07/30/2026,,TRUE
+ahernandez2,"Hernandez, Anthony",E105151,Engineering,User,FALSE,10/15/2018,08/20/2026,05/09/2026,,TRUE
+mjones,"Jones, Mark",E102642,Legal & Compliance,User,TRUE,05/27/2017,07/15/2026,12/29/2022,,TRUE
+rclark,"Clark, Ronald",E104238,Finance,User,FALSE,01/07/2018,08/07/2025,08/12/2026,,TRUE
+kwilliams,"Williams, Kevin",E101496,Sales,User,TRUE,05/25/2011,08/07/2026,07/09/2026,ERP_Superuser,FALSE
+acampbell2,"Campbell, Ashley",E105221,Sales,User,TRUE,04/06/2018,07/17/2026,07/02/2026,,TRUE
+phernandez,"Hernandez, Paul",E105166,Engineering,User,TRUE,04/26/2011,07/13/2026,08/16/2026,,FALSE
+trossi,"Rossi, Thomas",E104632,Sales,User,FALSE,08/01/2019,10/27/2024,12/21/2025,,TRUE
+pbaker,"Baker, Paul",E103194,Finance,User,TRUE,07/04/2016,07/24/2026,10/19/2025,,FALSE
+atorres,"Torres, Andrew",E103562,Information Technology,User,TRUE,10/01/2025,07/23/2026,06/26/2026,SQL_DBA_Admins,TRUE
+skowalski,"Kowalski, Sandra",E102505,Finance,User,FALSE,11/26/2017,03/10/2026,05/03/2026,,TRUE
+ncampbell,"Campbell, Nancy",E105361,Sales,User,TRUE,08/18/2024,07/31/2026,06/06/2026,,TRUE
+jlee,"Lee, Joseph",E100869,Finance,User,TRUE,02/08/2022,08/05/2026,07/17/2026,,TRUE
+gbaker,"Baker, George",E104473,Operations,User,TRUE,02/13/2012,07/26/2026,10/14/2025,,TRUE
+dallen2,"Allen, Donna",E103753,Operations,User,TRUE,08/16/2011,08/06/2026,08/24/2026,,TRUE
+fadams,"Adams, Fatima",E104871,Operations,User,TRUE,08/03/2014,07/12/2026,08/07/2026,,TRUE
+dsmith,"Smith, David",E103019,Marketing,User,TRUE,12/19/2010,07/16/2026,08/06/2023,,TRUE
+tgonzalez,"Gonzalez, Tomas",E100039,Engineering,User,FALSE,08/27/2020,08/18/2026,07/03/2026,,TRUE
+rtorres,"Torres, Robert",E101764,Sales,User,TRUE,11/12/2022,07/12/2026,08/26/2026,,TRUE
+etaylor,"Taylor, Elena",E101832,Sales,User,TRUE,03/23/2020,07/05/2026,08/22/2026,,TRUE
+itorres,"Torres, Ingrid",E104747,Customer Service,User,FALSE,09/08/2024,05/31/2026,06/03/2026,,TRUE
+mhaddad2,"Haddad, Michael",E102334,Information Technology,User,TRUE,05/18/2018,07/05/2026,03/28/2026,,TRUE
+dtorres,"Torres, Donna",E100315,Marketing,User,TRUE,10/27/2023,07/12/2026,10/27/2023,,TRUE
+cwright,"Wright, Chloe",E104768,Sales,User,TRUE,06/29/2009,07/25/2026,12/13/2025,,TRUE
+ssilva,"Silva, Steven",E104144,Engineering,User,FALSE,05/17/2025,08/21/2026,07/05/2026,,TRUE
+jhernandez,"Hernandez, Joseph",E103188,Operations,User,TRUE,04/08/2019,07/18/2026,11/08/2025,,TRUE
+knguyen,"Nguyen, Kevin",E104452,Information Technology,User,FALSE,07/02/2017,04/21/2026,01/19/2026,,TRUE
+dhernandez,"Hernandez, Diego",E100252,Finance,User,TRUE,10/02/2015,08/21/2026,03/12/2026,,TRUE
+madams,"Adams, Michael",E102984,Information Technology,User,TRUE,12/24/2023,08/29/2026,06/01/2026,Firewall_Admins,FALSE
+bnguyen,"Nguyen, Brian",E100099,Engineering,User,TRUE,01/17/2025,08/27/2026,04/03/2026,,TRUE
+bwilliams,"Williams, Betty",E103369,Information Technology,User,TRUE,07/29/2011,08/15/2026,06/24/2026,,TRUE
+rking,"King, Ravi",E103593,Sales,User,FALSE,09/12/2017,08/11/2026,06/13/2023,,TRUE
+rsanchez,"Sanchez, Ravi",E104103,Engineering,User,TRUE,09/24/2018,08/27/2026,10/08/2025,,FALSE
+kkimura,"Kimura, Kevin",E100076,Information Technology,User,TRUE,01/24/2012,08/18/2026,08/21/2026,,TRUE
+wcarter,"Carter, William",E100873,Sales,User,TRUE,12/28/2015,08/19/2026,06/28/2026,,TRUE
+khaddad,"Haddad, Kwame",E101885,Finance,User,TRUE,02/22/2020,09/09/2025,07/30/2026,,TRUE
+tpatel,"Patel, Tomas",E102915,Human Resources,User,TRUE,03/28/2010,08/03/2026,06/20/2026,,TRUE
+ylopez,"Lopez, Yuki",E102700,Operations,User,TRUE,11/22/2011,07/08/2026,04/26/2026,,TRUE
+mokafor,"Okafor, Mark",E101864,Information Technology,User,TRUE,05/24/2012,08/17/2026,05/14/2026,Backup Operators,TRUE
+audit_readonly,Shared - External Audit Read Only,,Operations,Shared,TRUE,05/07/2017,08/02/2025,08/09/2017,,FALSE
+dramirez,"Ramirez, Donald",E100384,Operations,User,TRUE,09/03/2024,07/05/2026,07/01/2026,,TRUE
+alopez,"Lopez, Ashley",E104158,Engineering,User,FALSE,02/04/2015,10/17/2025,12/14/2025,,TRUE
+sthompson,"Thompson, Stephanie",E104505,Information Technology,User,FALSE,07/05/2018,06/21/2025,12/23/2025,,TRUE
+ztorres,"Torres, Zara",E103487,Finance,User,FALSE,06/02/2025,01/03/2026,06/29/2026,,FALSE
+ddavis,"Davis, Deborah",E102096,Finance,User,TRUE,07/23/2009,07/06/2026,04/14/2026,,TRUE
+mnelson,"Nelson, Mateo",E103139,Operations,User,TRUE,08/14/2009,07/29/2026,01/18/2024,,TRUE
+tallen2,"Allen, Timothy",E104922,Sales,User,TRUE,07/09/2018,07/26/2026,06/01/2026,,TRUE
+kyoung,"Young, Karen",E104462,Human Resources,User,TRUE,12/24/2017,07/02/2025,06/15/2026,,TRUE
+jkowalski,"Kowalski, James",E101248,Legal & Compliance,User,TRUE,03/01/2023,07/31/2026,06/27/2026,,TRUE
+lthompson,"Thompson, Lisa",E103168,Sales,User,TRUE,11/14/2022,10/14/2025,06/21/2026,,TRUE
+snguyen,"Nguyen, Susan",E104347,Marketing,User,TRUE,05/26/2014,08/09/2026,07/08/2026,,TRUE
+dkowalski,"Kowalski, Deborah",E100791,Human Resources,User,TRUE,10/23/2025,07/16/2026,06/22/2026,,TRUE
+wramirez,"Ramirez, William",E102655,Human Resources,User,TRUE,02/01/2016,07/19/2026,07/24/2026,,TRUE
+brivera,"Rivera, Betty",E101727,Marketing,User,FALSE,12/01/2017,03/09/2025,01/09/2026,,TRUE
+anguyen,"Nguyen, Ashley",E105109,Operations,User,FALSE,12/19/2025,02/18/2026,12/19/2025,,TRUE
+admin_jdoe,ADMIN - Legacy Admin,,Information Technology,User,FALSE,04/18/2020,05/26/2026,04/21/2020,Backup Operators,TRUE
+ttorres,"Torres, Timothy",E101984,Engineering,User,FALSE,05/13/2018,06/03/2026,06/24/2026,,TRUE
+mgreen2,"Green, Maria",E103052,Legal & Compliance,User,TRUE,08/26/2020,08/21/2026,11/03/2025,,TRUE
+pclark,"Clark, Paul",E100347,Sales,User,TRUE,09/04/2023,02/19/2026,10/17/2025,,TRUE
+ayoung2,"Young, Ahmed",E103761,Information Technology,User,TRUE,04/20/2023,07/12/2026,07/25/2026,ERP_Superuser,TRUE
+thill,"Hill, Thomas",E101968,Marketing,User,TRUE,05/20/2016,08/18/2026,05/12/2026,,TRUE
+krossi,"Rossi, Kenneth",E101647,Sales,User,TRUE,02/12/2021,08/08/2026,07/27/2023,Backup Operators,TRUE
+sbaker2,"Baker, Sofia",E104211,Finance,User,TRUE,08/07/2018,07/11/2026,06/01/2026,,FALSE
+jtaylor,"Taylor, Joshua",E101215,Customer Service,User,TRUE,10/26/2018,08/19/2026,08/24/2026,,TRUE
+rbaker,"Baker, Ronald",E101965,Engineering,User,TRUE,08/12/2015,09/09/2025,08/21/2026,,TRUE
+ryoung,"Young, Ronald",E101688,Engineering,User,TRUE,12/18/2024,06/17/2026,07/27/2026,,TRUE
+kkimura2,"Kimura, Kenneth",E103970,Marketing,User,TRUE,02/22/2021,08/03/2026,07/13/2026,,FALSE
+svc_erp_batch,Service - ERP Nightly Batch,,Information Technology,Service,TRUE,05/21/2022,02/23/2025,09/05/2022,Domain Admins,FALSE
+dsilva,"Silva, Donna",E100192,Operations,User,TRUE,07/01/2024,07/21/2026,08/19/2026,,TRUE
+mrossi,"Rossi, Matthew",E102287,Engineering,User,FALSE,07/14/2011,05/12/2026,07/02/2026,ERP_Superuser,TRUE
+dlopez,"Lopez, Daniel",E100441,Finance,User,TRUE,03/17/2013,08/19/2026,06/05/2026,,TRUE
+rnguyen,"Nguyen, Rebecca",E101134,Operations,User,TRUE,02/27/2012,07/22/2026,02/20/2026,,TRUE
+kwright2,"Wright, Karen",E103471,Marketing,User,FALSE,11/27/2014,08/26/2026,02/07/2026,,TRUE
+jharris,"Harris, Joshua",E100498,Sales,User,TRUE,06/16/2022,07/29/2026,05/31/2023,,TRUE
+radams,"Adams, Richard",E100942,Sales,User,TRUE,11/09/2020,08/05/2026,06/15/2026,Domain Admins,TRUE
+mramirez,"Ramirez, Margaret",E100365,Customer Service,User,TRUE,03/12/2018,07/10/2026,11/11/2025,,TRUE
+tthomas,"Thomas, Tomas",E100895,Customer Service,User,FALSE,12/27/2016,10/04/2025,12/07/2025,,TRUE
+rthompson,"Thompson, Rebecca",E100397,Legal & Compliance,User,TRUE,10/03/2019,09/18/2025,07/25/2026,,TRUE
+jgonzalez,"Gonzalez, Joseph",E100156,Engineering,User,FALSE,02/16/2019,08/18/2026,08/13/2026,,TRUE
+ibrown,"Brown, Ingrid",E103349,Marketing,User,TRUE,01/17/2012,08/04/2026,03/12/2026,,TRUE
+sdavis2,"Davis, Sandra",E102893,Finance,User,TRUE,12/31/2024,08/18/2026,08/25/2025,,FALSE
+swilliams,"Williams, Steven",E102563,Finance,User,FALSE,07/25/2016,04/13/2026,07/04/2026,,TRUE
+rscott2,"Scott, Ronald",E104282,Engineering,User,TRUE,12/15/2020,07/27/2025,02/15/2024,,TRUE
+mmartin3,"Martin, Mark",E105348,Engineering,User,TRUE,09/03/2017,07/23/2026,12/18/2025,Firewall_Admins,TRUE
+mmartinez2,"Martinez, Margaret",E103039,Information Technology,User,TRUE,03/31/2018,08/13/2026,08/05/2026,,TRUE
+landerson,"Anderson, Lisa",E101868,Engineering,User,FALSE,04/06/2021,01/27/2026,08/27/2026,,TRUE
+sgreen,"Green, Sofia",E100458,Finance,User,TRUE,03/09/2009,08/09/2026,07/06/2025,SQL_DBA_Admins,TRUE
+klee,"Lee, Kenneth",E104974,Operations,User,FALSE,05/30/2022,07/25/2025,06/08/2025,,TRUE
+csmith,"Smith, Carol",E104134,Information Technology,User,TRUE,03/24/2016,07/20/2026,06/10/2026,,TRUE
+jtaylor2,"Taylor, Jessica",E104365,Marketing,User,TRUE,12/15/2025,07/07/2026,12/15/2025,,TRUE
+agarcia,"Garcia, Ahmed",E101282,Information Technology,User,TRUE,03/20/2015,06/30/2026,08/03/2024,,TRUE
+ahaddad,"Haddad, Anthony",E103363,Legal & Compliance,User,TRUE,02/04/2010,07/03/2026,07/21/2026,,TRUE
+kmartinez,"Martinez, Kwame",E103852,Information Technology,User,TRUE,08/29/2012,12/20/2025,07/02/2026,Backup Operators,TRUE
+thernandez,"Hernandez, Tomas",E104961,Sales,User,TRUE,07/28/2015,07/03/2026,07/28/2026,,TRUE
+kandersson,"Andersson, Kevin",E104657,Operations,User,TRUE,07/28/2020,07/05/2026,08/26/2026,,TRUE
+dmoore2,"Moore, Diego",E103958,Legal & Compliance,User,TRUE,05/10/2022,03/19/2024,06/12/2026,Backup Operators,FALSE
+klopez,"Lopez, Kimberly",E100215,Legal & Compliance,User,TRUE,08/05/2021,08/20/2026,06/24/2026,,TRUE
+pperez,"Perez, Priya",E104342,Information Technology,User,FALSE,06/30/2025,08/14/2026,05/18/2026,,TRUE
+zhernandez,"Hernandez, Zara",E105325,Finance,User,TRUE,06/26/2014,08/19/2026,08/14/2026,,TRUE
+onovak,"Novak, Omar",E101013,Finance,User,TRUE,04/07/2010,08/22/2026,11/03/2025,,TRUE
+nmartin,"Martin, Nia",E100912,Finance,User,TRUE,07/21/2016,03/24/2026,04/26/2025,,TRUE
+tempcontractor1,Contractor - Unassigned,,Information Technology,User,TRUE,09/06/2019,12/13/2025,12/23/2019,,FALSE
+jwilson2,"Wilson, Jessica",E103437,Engineering,User,FALSE,04/16/2010,05/24/2025,11/27/2024,,TRUE
+snelson,"Nelson, Sandra",E104606,Information Technology,User,TRUE,02/16/2025,07/13/2026,09/04/2025,,TRUE
+agreen,"Green, Andrew",E100980,Finance,User,TRUE,10/26/2024,07/08/2026,04/04/2026,,TRUE
+cwhite2,"White, Charles",E105387,Finance,User,TRUE,02/17/2014,07/26/2026,02/04/2026,,TRUE
+tkowalski,"Kowalski, Timothy",E105182,Information Technology,User,TRUE,08/14/2017,04/29/2024,08/25/2026,,TRUE
+tnovak,"Novak, Thomas",E104015,Engineering,User,TRUE,07/02/2009,07/09/2026,10/21/2024,,TRUE
+rmiller,"Miller, Rebecca",E101942,Information Technology,User,TRUE,03/02/2021,04/13/2026,08/15/2026,,TRUE
+yokafor,"Okafor, Yuki",E101552,Legal & Compliance,User,TRUE,09/26/2018,08/01/2026,08/14/2026,,TRUE
+smartin,"Martin, Sarah",E102050,Sales,User,FALSE,03/03/2019,06/07/2026,06/08/2026,,FALSE
+lhill,"Hill, Linda",E100786,Customer Service,User,TRUE,12/19/2012,08/09/2026,08/12/2026,,TRUE
+wking,"King, William",E104011,Engineering,User,TRUE,04/30/2025,08/09/2026,12/28/2025,,TRUE
+mmartin,"Martin, Michelle",E101242,Marketing,User,TRUE,02/11/2016,08/15/2026,08/15/2026,,TRUE
+skowalski2,"Kowalski, Stephanie",E103063,Engineering,User,TRUE,02/28/2013,08/21/2026,02/19/2024,,TRUE
+enelson,"Nelson, Elena",E102536,Operations,User,TRUE,06/10/2021,07/13/2026,08/10/2026,,TRUE
+btorres,"Torres, Brian",E101058,Customer Service,User,TRUE,09/24/2016,07/06/2026,08/12/2026,,TRUE
+rrossi,"Rossi, Robert",E101340,Sales,User,TRUE,12/03/2014,07/07/2026,06/15/2026,,TRUE
+bking,"King, Betty",E102578,Human Resources,User,TRUE,07/05/2016,09/25/2025,09/01/2025,,TRUE
+zwilson,"Wilson, Zara",E101265,Operations,User,TRUE,06/10/2021,05/02/2025,02/11/2025,,TRUE
+smoore,"Moore, Steven",E104609,Legal & Compliance,User,TRUE,02/13/2019,07/23/2026,06/02/2026,,TRUE
+tthompson,"Thompson, Tomas",E104478,Engineering,User,FALSE,11/09/2013,07/23/2026,06/09/2026,Firewall_Admins,TRUE
+mbrown,"Brown, Melissa",E103944,Finance,User,TRUE,10/18/2023,07/19/2026,05/27/2026,SQL_DBA_Admins,TRUE
+shared_training,Shared - Training Room PC,,Operations,Shared,TRUE,09/21/2017,08/06/2026,02/01/2018,Domain Admins,FALSE
+dhaddad,"Haddad, Donald",E100653,Operations,User,TRUE,05/30/2019,04/26/2025,07/23/2026,,TRUE
+nflores,"Flores, Nia",E105336,Customer Service,User,TRUE,07/01/2016,08/24/2026,06/04/2026,,TRUE
+mnovak,"Novak, Margaret",E100954,Engineering,User,TRUE,01/09/2024,07/10/2026,11/02/2024,,TRUE
+whill,"Hill, William",E102589,Engineering,User,TRUE,07/02/2013,07/07/2026,11/11/2023,,TRUE
+amitchell,"Mitchell, Anika",E102816,Legal & Compliance,User,TRUE,11/19/2017,07/12/2026,06/06/2026,,FALSE
+kperez2,"Perez, Kimberly",E102192,Legal & Compliance,User,TRUE,05/23/2014,07/29/2026,08/23/2024,,FALSE
+drobinson,"Robinson, Donald",E100023,Engineering,User,TRUE,04/29/2022,07/27/2026,06/06/2026,,FALSE
+awilliams,"Williams, Anika",E103904,Operations,User,FALSE,03/25/2011,04/12/2024,06/09/2026,,TRUE
+otaylor,"Taylor, Omar",E104088,Information Technology,User,TRUE,09/06/2022,08/24/2026,06/04/2026,ERP_Superuser,FALSE
+gmitchell,"Mitchell, George",E104112,Sales,User,TRUE,08/06/2021,07/06/2026,04/11/2026,,TRUE
+mhall2,"Hall, Maria",E105299,Information Technology,User,FALSE,09/20/2016,11/30/2024,06/11/2026,,TRUE
+gnguyen,"Nguyen, George",E101193,Engineering,User,TRUE,11/02/2023,05/15/2026,04/26/2025,,TRUE

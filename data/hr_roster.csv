@@ -1,0 +1,488 @@
+EmployeeID,LastName,FirstName,Department,JobTitle,Location,HireDate,TerminationDate,EmploymentStatus
+E100007,Allen,Joseph,Information Technology,IT Manager,Remote - US,02/25/2012,,Active
+E100023,Robinson,Donald,Engineering,Software Engineer I,Remote - US,04/22/2022,,Active
+E100039,Gonzalez,Tomas,Engineering,DevOps Engineer,Remote - US,08/28/2020,,Active
+E100052,Nguyen,Luca,Operations,Operations Manager,Austin TX,11/29/2016,,Active
+E100058,Young,Joshua,Information Technology,Cloud Engineer,Columbus OH,10/18/2021,,Active
+E100076,Kimura,Kevin,Information Technology,IT Manager,Remote - US,01/19/2012,,Active
+E100082,Campbell,Andrew,Engineering,Software Engineer I,Remote - US,07/31/2009,,Active
+E100099,Nguyen,Brian,Engineering,DevOps Engineer,Toronto ON,01/13/2025,,Active
+E100115,Lewis,Luca,Engineering,Software Engineer II,Austin TX,04/08/2012,,Active
+E100134,Perez,Wei,Finance,Staff Accountant,Remote - US,07/06/2015,07/28/2025,Terminated
+E100149,Lee,Nia,Marketing,Content Strategist,Columbus OH,11/07/2018,,Active
+E100156,Gonzalez,Joseph,Engineering,Engineering Manager,Remote - US,02/05/2019,,Active
+E100175,Robinson,Wei,Engineering,QA Engineer,Toronto ON,03/28/2017,,Active
+E100192,Silva,Donna,Operations,Warehouse Supervisor,Remote - US,07/03/2024,,Active
+E100209,Hall,Kenneth,Sales,Regional Sales Manager,Columbus OH,02/20/2012,,Active
+E100215,Lopez,Kimberly,Legal & Compliance,Contracts Manager,Toronto ON,07/27/2021,,Active
+E100227,Haddad,Sarah,Customer Service,Support Representative,Columbus OH,07/04/2012,05/09/2026,Terminated
+E100244,Nelson,Donald,Operations,Logistics Coordinator,Austin TX,02/18/2021,,Active
+E100252,Hernandez,Diego,Finance,AP Specialist,Toronto ON,10/03/2015,,Active
+E100262,Brown,Paul,Marketing,Demand Gen Manager,Toronto ON,01/16/2020,,Active
+E100268,Scott,Christopher,Sales,Regional Sales Manager,Columbus OH,04/23/2022,05/11/2024,Terminated
+E100271,Robinson,Charles,Marketing,Brand Manager,Manila PH,12/28/2022,,Active
+E100280,Lopez,Mateo,Finance,Financial Analyst,Toronto ON,01/18/2019,,Active
+E100294,Robinson,George,Information Technology,Network Engineer,Columbus OH,03/11/2010,,Active
+E100302,Rodriguez,Daniel,Information Technology,Security Analyst,Toronto ON,07/18/2016,,Active
+E100309,Young,Anika,Information Technology,Security Analyst,Manila PH,02/29/2024,,Active
+E100315,Torres,Donna,Marketing,Demand Gen Manager,Manila PH,10/30/2023,,Active
+E100325,Smith,Emily,Marketing,Marketing Coordinator,Remote - US,06/13/2017,06/28/2024,Terminated
+E100338,Walker,Ravi,Finance,AP Specialist,Toronto ON,02/27/2016,,Active
+E100347,Clark,Paul,Sales,Sales Development Rep,Columbus OH,09/01/2023,,Active
+E100365,Ramirez,Margaret,Customer Service,Support Representative,Columbus OH,03/05/2018,,Active
+E100369,Davis,Sofia,Marketing,Marketing Coordinator,Toronto ON,10/27/2021,02/15/2026,Terminated
+E100373,Hernandez,Steven,Engineering,Engineering Manager,Columbus OH,09/20/2013,,Active
+E100384,Ramirez,Donald,Operations,Operations Manager,Remote - US,08/27/2024,,Active
+E100397,Thompson,Rebecca,Legal & Compliance,Paralegal,Columbus OH,10/06/2019,,Active
+E100401,Martin,Ravi,Information Technology,Network Engineer,Columbus OH,05/09/2019,07/07/2026,Terminated
+E100419,Haddad,Mark,Engineering,Software Engineer II,Remote - US,11/30/2011,,Active
+E100426,Anderson,Deborah,Engineering,DevOps Engineer,Remote - US,08/26/2018,,Active
+E100441,Lopez,Daniel,Finance,Financial Analyst,Remote - US,03/17/2013,,Active
+E100458,Green,Sofia,Finance,Staff Accountant,Austin TX,02/28/2009,,Active
+E100468,Allen,Kenneth,Information Technology,Security Analyst,Columbus OH,03/25/2011,,Active
+E100484,Perez,Kwame,Engineering,Software Engineer I,Remote - US,02/27/2019,03/18/2025,Terminated
+E100498,Harris,Joshua,Sales,Account Executive,Toronto ON,06/04/2022,,Active
+E100510,Davis,Kevin,Information Technology,Network Engineer,Austin TX,12/09/2016,,Active
+E100520,Torres,Christopher,Sales,Account Executive,Toronto ON,03/20/2021,01/22/2025,Terminated
+E100531,Sanchez,Patricia,Human Resources,HR Generalist,Remote - US,02/14/2023,,Active
+E100548,Young,Mateo,Engineering,Software Engineer I,Columbus OH,12/25/2021,,Active
+E100558,Andersson,Robert,Operations,Production Planner,Remote - US,01/25/2013,,Active
+E100571,Dubois,Nia,Sales,Sales Operations Analyst,Columbus OH,05/11/2024,,Active
+E100578,Novak,Steven,Sales,Regional Sales Manager,Columbus OH,12/22/2018,02/22/2024,Terminated
+E100590,Jackson,Zara,Operations,Operations Manager,Remote - US,01/14/2024,,Active
+E100609,Kowalski,Rebecca,Legal & Compliance,Contracts Manager,Manila PH,06/18/2011,,Active
+E100624,Thomas,Mark,Finance,AP Specialist,Toronto ON,09/08/2011,,Active
+E100637,Garcia,Kimberly,Engineering,Software Engineer I,Remote - US,02/22/2025,,Active
+E100653,Haddad,Donald,Operations,Logistics Coordinator,Remote - US,05/28/2019,04/18/2025,Terminated
+E100668,Adams,Elena,Finance,Staff Accountant,Remote - US,12/05/2021,,Active
+E100686,Kowalski,Betty,Sales,Account Executive,Austin TX,01/28/2017,,Active
+E100698,Silva,Ashley,Operations,Warehouse Supervisor,Toronto ON,06/02/2010,10/08/2024,Terminated
+E100715,Moore,Patricia,Operations,Operations Analyst,Remote - US,01/21/2016,,Active
+E100728,Walker,Deborah,Engineering,Engineering Manager,Columbus OH,04/17/2022,,Active
+E100747,Lewis,Donna,Engineering,QA Engineer,Manila PH,05/22/2018,,Active
+E100763,Perez,Matthew,Legal & Compliance,Contracts Manager,Columbus OH,07/21/2023,,Active
+E100776,Dubois,Kwame,Sales,Account Executive,Remote - US,03/20/2016,,Active
+E100786,Hill,Linda,Customer Service,Support Team Lead,Remote - US,12/12/2012,,Active
+E100791,Kowalski,Deborah,Human Resources,HR Business Partner,Remote - US,10/11/2025,,Active
+E100806,Torres,Melissa,Customer Service,Support Representative,Austin TX,02/28/2022,,Active
+E100824,Moore,Maria,Engineering,QA Engineer,Manila PH,12/20/2015,,Active
+E100829,Ramirez,Mateo,Human Resources,HR Business Partner,Manila PH,09/13/2022,,Active
+E100847,Lopez,James,Marketing,Brand Manager,Remote - US,07/08/2016,,Active
+E100857,Lopez,Diego,Customer Service,Support Team Lead,Manila PH,01/10/2010,,Active
+E100869,Lee,Joseph,Finance,Accounting Manager,Columbus OH,01/28/2022,,Active
+E100873,Carter,William,Sales,Account Executive,Austin TX,12/22/2015,,Active
+E100884,Wilson,Patricia,Engineering,Engineering Manager,Manila PH,02/04/2010,,Active
+E100892,Adams,Anika,Sales,Regional Sales Manager,Columbus OH,12/02/2016,,Active
+E100895,Thomas,Tomas,Customer Service,Support Representative,Remote - US,12/16/2016,10/05/2025,Terminated
+E100912,Martin,Nia,Finance,Financial Analyst,Columbus OH,07/19/2016,03/06/2026,Terminated
+E100917,Green,Lisa,Sales,Regional Sales Manager,Columbus OH,01/14/2019,,Active
+E100935,Mitchell,Ingrid,Finance,Accounting Manager,Remote - US,11/17/2014,,Active
+E100942,Adams,Richard,Sales,Account Executive,Columbus OH,11/01/2020,,Active
+E100954,Novak,Margaret,Engineering,Engineering Manager,Remote - US,01/07/2024,,Active
+E100966,Allen,Sarah,Marketing,Brand Manager,Manila PH,01/31/2026,,Active
+E100980,Green,Andrew,Finance,Senior Accountant,Remote - US,10/20/2024,,Active
+E100989,Taylor,Michael,Information Technology,Help Desk Analyst,Columbus OH,02/09/2017,,Active
+E100994,Hill,Brian,Operations,Logistics Coordinator,Remote - US,05/22/2024,,Active
+E101013,Novak,Omar,Finance,Accounting Manager,Remote - US,03/31/2010,,Active
+E101019,Nelson,Priya,Legal & Compliance,Compliance Analyst,Columbus OH,09/14/2011,,Active
+E101027,Kimura,Matthew,Engineering,QA Engineer,Manila PH,06/15/2016,06/27/2026,Terminated
+E101040,Novak,Diego,Customer Service,Escalations Specialist,Manila PH,05/12/2014,,Active
+E101058,Torres,Brian,Customer Service,Escalations Specialist,Columbus OH,09/27/2016,,Active
+E101068,Young,David,Sales,Regional Sales Manager,Austin TX,05/26/2017,,Active
+E101084,Torres,Sarah,Information Technology,Help Desk Analyst,Columbus OH,05/12/2010,,Active
+E101088,Lewis,Timothy,Legal & Compliance,Paralegal,Manila PH,10/07/2022,,Active
+E101098,Green,Mark,Finance,AP Specialist,Austin TX,05/17/2013,,Active
+E101105,Allen,Donald,Operations,Operations Manager,Manila PH,09/29/2017,,Active
+E101110,King,Linda,Marketing,Content Strategist,Columbus OH,01/12/2021,,Active
+E101116,Campbell,Wei,Sales,Account Executive,Remote - US,01/13/2022,,Active
+E101134,Nguyen,Rebecca,Operations,Warehouse Supervisor,Columbus OH,02/23/2012,,Active
+E101153,Carter,Sandra,Engineering,Software Engineer I,Remote - US,05/23/2009,08/29/2025,Terminated
+E101164,Thomas,Richard,Operations,Production Planner,Remote - US,10/07/2018,,Active
+E101168,Campbell,Mark,Engineering,Senior Software Engineer,Remote - US,03/21/2013,,Active
+E101177,Campbell,David,Finance,Senior Accountant,Columbus OH,04/10/2012,,Active
+E101193,Nguyen,George,Engineering,Software Engineer I,Austin TX,10/28/2023,,Active
+E101199,Davis,Mark,Information Technology,Systems Administrator,Manila PH,09/28/2017,,Active
+E101208,Campbell,Thomas,Sales,Sales Development Rep,Austin TX,06/25/2022,,Active
+E101215,Taylor,Joshua,Customer Service,Support Representative,Austin TX,10/26/2018,,Active
+E101231,Wilson,James,Human Resources,Benefits Administrator,Manila PH,04/06/2018,,Active
+E101242,Martin,Michelle,Marketing,Content Strategist,Columbus OH,02/13/2016,,Active
+E101248,Kowalski,James,Legal & Compliance,General Counsel,Remote - US,02/28/2023,,Active
+E101265,Wilson,Zara,Operations,Operations Manager,Remote - US,06/01/2021,04/25/2025,Terminated
+E101269,Miller,Wei,Engineering,Engineering Manager,Remote - US,01/07/2009,,Active
+E101282,Garcia,Ahmed,Information Technology,Network Engineer,Columbus OH,03/16/2015,,Active
+E101286,Walker,Elizabeth,Information Technology,IT Manager,Columbus OH,12/08/2020,,Active
+E101293,Robinson,Karen,Sales,Sales Development Rep,Remote - US,04/16/2021,,Active
+E101309,Taylor,Paul,Sales,Account Executive,Manila PH,05/11/2020,10/07/2025,Terminated
+E101326,Silva,Andrew,Information Technology,IT Manager,Remote - US,12/16/2009,08/20/2025,Terminated
+E101329,Anderson,Charles,Engineering,Software Engineer II,Austin TX,03/21/2014,,Active
+E101340,Rossi,Robert,Sales,Regional Sales Manager,Remote - US,11/29/2014,,Active
+E101350,Rossi,Betty,Sales,Sales Development Rep,Remote - US,05/27/2011,,Active
+E101364,Dubois,Elizabeth,Marketing,Brand Manager,Austin TX,05/21/2009,,Active
+E101380,Flores,Diego,Engineering,Software Engineer II,Remote - US,12/21/2016,,Active
+E101399,Baker,Fatima,Customer Service,Support Team Lead,Columbus OH,11/10/2021,11/21/2025,Terminated
+E101414,Hall,Ronald,Information Technology,IT Manager,Remote - US,08/16/2025,,Active
+E101427,Andersson,Rebecca,Engineering,DevOps Engineer,Remote - US,10/01/2025,,Active
+E101443,Allen,Emily,Finance,Staff Accountant,Austin TX,07/05/2014,,Active
+E101450,Andersson,Tomas,Engineering,Senior Software Engineer,Austin TX,06/10/2024,,Active
+E101467,Kowalski,Ingrid,Human Resources,Benefits Administrator,Columbus OH,09/03/2009,,Active
+E101483,Flores,Mark,Sales,Regional Sales Manager,Austin TX,06/16/2013,04/12/2024,Terminated
+E101491,Garcia,Joseph,Human Resources,HR Business Partner,Remote - US,08/24/2023,06/03/2025,Terminated
+E101496,Williams,Kevin,Sales,Account Executive,Remote - US,05/25/2011,,Active
+E101510,Martinez,Mateo,Operations,Production Planner,Austin TX,03/07/2026,06/20/2026,Terminated
+E101514,Miller,Amanda,Sales,Sales Development Rep,Austin TX,06/25/2019,04/02/2026,Terminated
+E101521,Hall,Daniel,Information Technology,Systems Administrator,Remote - US,02/12/2018,,Active
+E101540,Walker,Patricia,Marketing,Brand Manager,Toronto ON,10/19/2013,,Active
+E101552,Okafor,Yuki,Legal & Compliance,Paralegal,Manila PH,09/19/2018,,Active
+E101563,Nelson,George,Finance,Senior Accountant,Remote - US,12/25/2018,,Active
+E101574,Thompson,Priya,Marketing,Demand Gen Manager,Manila PH,09/26/2018,01/21/2025,Terminated
+E101588,Jackson,Joseph,Operations,Warehouse Supervisor,Austin TX,03/17/2015,,Active
+E101604,Rodriguez,Yuki,Information Technology,Help Desk Analyst,Columbus OH,05/27/2020,,Active
+E101607,Sanchez,Emily,Engineering,DevOps Engineer,Austin TX,10/31/2010,,Active
+E101620,Thomas,Thomas,Finance,Controller,Columbus OH,11/09/2015,,Active
+E101637,Thompson,Nancy,Engineering,QA Engineer,Remote - US,08/06/2013,,Active
+E101647,Rossi,Kenneth,Sales,Regional Sales Manager,Columbus OH,02/13/2021,,Active
+E101658,Wright,Kenneth,Engineering,Software Engineer II,Columbus OH,07/20/2018,,Active
+E101671,Martinez,Ravi,Engineering,DevOps Engineer,Remote - US,11/26/2015,,Active
+E101681,Moore,Daniel,Sales,Sales Operations Analyst,Columbus OH,01/26/2025,,Active
+E101688,Young,Ronald,Engineering,Software Engineer I,Austin TX,12/21/2024,05/30/2026,Terminated
+E101693,Nelson,Yuki,Sales,Account Executive,Columbus OH,01/05/2019,,Active
+E101705,Dubois,Brian,Information Technology,IT Manager,Toronto ON,12/14/2021,,Active
+E101710,Johnson,Nancy,Sales,Sales Operations Analyst,Columbus OH,07/23/2009,,Active
+E101723,Thompson,Emily,Operations,Production Planner,Remote - US,02/23/2023,,Active
+E101727,Rivera,Betty,Marketing,Demand Gen Manager,Remote - US,11/20/2017,03/10/2025,Terminated
+E101746,Thompson,Paul,Operations,Production Planner,Austin TX,08/12/2021,,Active
+E101764,Torres,Robert,Sales,Regional Sales Manager,Columbus OH,11/11/2022,,Active
+E101768,Green,Patricia,Information Technology,Database Administrator,Remote - US,04/21/2013,03/13/2025,Terminated
+E101781,Okafor,Christopher,Marketing,Content Strategist,Columbus OH,12/22/2025,,Active
+E101790,Young,Richard,Information Technology,Database Administrator,Remote - US,08/24/2009,,Active
+E101800,Wright,Anika,Information Technology,Network Engineer,Austin TX,07/23/2013,,Active
+E101805,Campbell,Michael,Customer Service,Support Team Lead,Columbus OH,03/21/2021,,Active
+E101813,Green,Zara,Information Technology,Security Analyst,Columbus OH,05/05/2009,,Active
+E101828,White,James,Customer Service,Support Team Lead,Toronto ON,08/05/2016,,Active
+E101832,Taylor,Elena,Sales,Account Executive,Columbus OH,03/18/2020,,Active
+E101838,Green,Kimberly,Information Technology,Cloud Engineer,Columbus OH,03/03/2012,,Active
+E101853,Walker,Maria,Finance,Financial Analyst,Manila PH,04/30/2025,,Active
+E101864,Okafor,Mark,Information Technology,Cloud Engineer,Columbus OH,05/18/2012,,Active
+E101868,Anderson,Lisa,Engineering,Software Engineer II,Remote - US,03/27/2021,02/02/2026,Terminated
+E101885,Haddad,Kwame,Finance,Controller,Austin TX,02/23/2020,,Active
+E101892,Adams,Andrew,Operations,Operations Manager,Columbus OH,05/25/2026,,Active
+E101909,Johnson,Donald,Information Technology,Database Administrator,Columbus OH,05/26/2022,,Active
+E101922,Roberts,Jennifer,Engineering,DevOps Engineer,Manila PH,05/30/2011,,Active
+E101925,Taylor,Tomas,Customer Service,Escalations Specialist,Austin TX,10/02/2022,,Active
+E101932,Hill,Margaret,Engineering,Software Engineer I,Remote - US,08/20/2014,,Active
+E101937,Wright,Andrew,Engineering,Software Engineer II,Manila PH,01/29/2024,,Active
+E101942,Miller,Rebecca,Information Technology,Security Analyst,Austin TX,02/26/2021,04/18/2026,Terminated
+E101947,Martin,Amanda,Engineering,Senior Software Engineer,Austin TX,10/04/2023,08/13/2026,Terminated
+E101958,Jones,Priya,Information Technology,Systems Administrator,Remote - US,05/13/2022,07/13/2024,Terminated
+E101965,Baker,Ronald,Engineering,DevOps Engineer,Toronto ON,08/14/2015,,Active
+E101968,Hill,Thomas,Marketing,Demand Gen Manager,Remote - US,05/23/2016,,Active
+E101980,Jones,Patricia,Human Resources,HR Director,Remote - US,02/10/2017,,Active
+E101984,Torres,Timothy,Engineering,Engineering Manager,Manila PH,05/09/2018,06/06/2026,Terminated
+E101989,Baker,Karen,Legal & Compliance,Paralegal,Remote - US,04/11/2021,,Active
+E102005,Hall,Paul,Engineering,Engineering Manager,Manila PH,07/21/2025,09/25/2025,Terminated
+E102024,Dubois,David,Engineering,Senior Software Engineer,Manila PH,10/23/2014,,Active
+E102030,Clark,Melissa,Marketing,Brand Manager,Columbus OH,08/10/2025,08/24/2026,Terminated
+E102033,Wilson,Rebecca,Sales,Sales Operations Analyst,Columbus OH,05/26/2009,,Active
+E102050,Martin,Sarah,Sales,Sales Development Rep,Columbus OH,02/24/2019,06/08/2026,Terminated
+E102066,Martin,Donald,Customer Service,Support Representative,Columbus OH,11/26/2019,,Active
+E102071,Lewis,Stephanie,Engineering,DevOps Engineer,Remote - US,08/20/2011,,Active
+E102084,Johnson,Donna,Sales,Sales Development Rep,Toronto ON,07/01/2009,,Active
+E102089,Davis,Rebecca,Customer Service,Support Representative,Columbus OH,09/26/2023,,Active
+E102096,Davis,Deborah,Finance,AP Specialist,Columbus OH,07/11/2009,,Active
+E102101,Roberts,Melissa,Customer Service,Support Team Lead,Manila PH,12/12/2023,,Active
+E102106,Kimura,Anika,Engineering,Software Engineer II,Remote - US,02/13/2023,,Active
+E102114,Rivera,Lisa,Information Technology,Systems Administrator,Toronto ON,08/09/2013,,Active
+E102132,Hernandez,Emily,Operations,Production Planner,Austin TX,10/06/2020,,Active
+E102140,Taylor,Donna,Legal & Compliance,Compliance Analyst,Columbus OH,09/13/2015,,Active
+E102153,Jones,Christopher,Engineering,Software Engineer II,Remote - US,12/14/2024,,Active
+E102170,Okafor,Thomas,Finance,AP Specialist,Toronto ON,09/06/2017,05/14/2024,Terminated
+E102175,Martin,Luca,Sales,Regional Sales Manager,Austin TX,12/01/2021,,Active
+E102192,Perez,Kimberly,Legal & Compliance,Contracts Manager,Manila PH,05/14/2014,,Active
+E102211,Hall,Mateo,Marketing,Demand Gen Manager,Remote - US,08/13/2012,,Active
+E102219,Wright,Timothy,Information Technology,Systems Administrator,Remote - US,05/22/2023,,Active
+E102233,Novak,Ivan,Engineering,Software Engineer I,Columbus OH,01/25/2019,05/04/2026,Terminated
+E102251,Allen,Patricia,Sales,Sales Operations Analyst,Columbus OH,06/07/2017,,Active
+E102269,Novak,Mateo,Information Technology,Systems Administrator,Remote - US,08/11/2010,,Active
+E102276,Baker,Matthew,Operations,Logistics Coordinator,Columbus OH,04/15/2017,,Active
+E102287,Rossi,Matthew,Engineering,Software Engineer II,Remote - US,07/07/2011,05/16/2026,Terminated
+E102294,Robinson,Mateo,Engineering,Software Engineer I,Austin TX,03/19/2014,,Active
+E102307,Young,Thomas,Operations,Operations Manager,Toronto ON,12/31/2010,,Active
+E102321,Gonzalez,Emily,Marketing,Content Strategist,Austin TX,05/22/2022,,Active
+E102328,Ramirez,Ingrid,Operations,Operations Analyst,Remote - US,07/31/2010,,Active
+E102334,Haddad,Michael,Information Technology,Help Desk Analyst,Columbus OH,05/11/2018,,Active
+E102339,Gonzalez,Margaret,Information Technology,Security Analyst,Columbus OH,07/16/2012,,Active
+E102351,Haddad,Paul,Information Technology,Help Desk Analyst,Remote - US,07/17/2014,,Active
+E102368,Thompson,Nia,Human Resources,Recruiter,Remote - US,01/27/2011,,Active
+E102375,Walker,Betty,Engineering,Engineering Manager,Columbus OH,04/04/2012,,Active
+E102389,Harris,Donald,Operations,Operations Manager,Toronto ON,05/22/2014,,Active
+E102405,Nelson,Kevin,Operations,Operations Analyst,Remote - US,07/27/2015,,Active
+E102418,Martin,Richard,Engineering,Engineering Manager,Columbus OH,12/05/2016,,Active
+E102423,Hall,Anika,Sales,Sales Development Rep,Toronto ON,05/17/2012,,Active
+E102434,Hall,Rebecca,Operations,Warehouse Supervisor,Toronto ON,02/25/2013,,Active
+E102445,Moore,Elena,Operations,Operations Analyst,Manila PH,03/15/2014,,Active
+E102454,Hall,Karen,Information Technology,Database Administrator,Remote - US,05/28/2020,,Active
+E102472,Clark,Brian,Customer Service,Support Representative,Remote - US,06/29/2020,02/22/2026,Terminated
+E102491,Roberts,Diego,Customer Service,Support Representative,Austin TX,06/28/2019,06/01/2024,Terminated
+E102505,Kowalski,Sandra,Finance,Controller,Manila PH,11/15/2017,03/11/2026,Terminated
+E102519,Campbell,James,Engineering,Software Engineer I,Remote - US,10/24/2021,,Active
+E102529,Martinez,Priya,Marketing,Marketing Coordinator,Austin TX,01/19/2020,,Active
+E102536,Nelson,Elena,Operations,Logistics Coordinator,Remote - US,06/04/2021,,Active
+E102549,Scott,Chloe,Engineering,Engineering Manager,Remote - US,01/04/2013,01/20/2024,Terminated
+E102563,Williams,Steven,Finance,AP Specialist,Columbus OH,07/22/2016,04/14/2026,Terminated
+E102578,King,Betty,Human Resources,HR Business Partner,Remote - US,06/26/2016,,Active
+E102589,Hill,William,Engineering,QA Engineer,Austin TX,06/21/2013,,Active
+E102603,Lewis,Robert,Finance,Senior Accountant,Columbus OH,10/12/2023,,Active
+E102607,Rossi,Luca,Sales,Regional Sales Manager,Austin TX,02/15/2009,,Active
+E102626,Lewis,Sofia,Engineering,Software Engineer I,Austin TX,10/01/2009,,Active
+E102629,Ramirez,Deborah,Operations,Operations Manager,Austin TX,05/03/2021,,Active
+E102642,Jones,Mark,Legal & Compliance,Compliance Analyst,Manila PH,05/20/2017,,Active
+E102655,Ramirez,William,Human Resources,Benefits Administrator,Columbus OH,01/21/2016,,Active
+E102665,Green,Richard,Legal & Compliance,Contracts Manager,Manila PH,04/22/2025,,Active
+E102679,Johnson,Kevin,Information Technology,Database Administrator,Columbus OH,10/28/2014,,Active
+E102689,Torres,Paul,Operations,Warehouse Supervisor,Columbus OH,05/04/2011,01/29/2026,Terminated
+E102700,Lopez,Yuki,Operations,Warehouse Supervisor,Columbus OH,11/19/2011,,Active
+E102717,Jackson,Susan,Operations,Operations Analyst,Columbus OH,06/24/2019,,Active
+E102732,Allen,Margaret,Information Technology,Systems Administrator,Remote - US,10/17/2009,,Active
+E102749,Hill,Anthony,Human Resources,HR Generalist,Columbus OH,02/11/2021,,Active
+E102768,Carter,David,Legal & Compliance,General Counsel,Austin TX,03/30/2019,,Active
+E102771,Smith,Michael,Sales,Account Executive,Columbus OH,11/04/2016,,Active
+E102786,Baker,Andrew,Information Technology,Security Analyst,Remote - US,07/09/2014,,Active
+E102801,Gonzalez,Betty,Finance,Senior Accountant,Columbus OH,02/28/2009,,Active
+E102816,Mitchell,Anika,Legal & Compliance,Compliance Analyst,Columbus OH,11/09/2017,,Active
+E102832,Rossi,Joseph,Legal & Compliance,Contracts Manager,Austin TX,05/16/2015,,Active
+E102846,Baker,Anthony,Legal & Compliance,General Counsel,Columbus OH,03/16/2016,,Active
+E102862,Nelson,Emily,Finance,Controller,Toronto ON,03/18/2021,04/04/2025,Terminated
+E102876,Moore,Lisa,Legal & Compliance,Compliance Analyst,Remote - US,10/08/2013,,Active
+E102893,Davis,Sandra,Finance,Financial Analyst,Columbus OH,12/26/2024,,Active
+E102903,Rossi,Fatima,Customer Service,Support Team Lead,Remote - US,04/02/2017,,Active
+E102915,Patel,Tomas,Human Resources,Benefits Administrator,Columbus OH,03/27/2010,,Active
+E102920,Patel,James,Engineering,QA Engineer,Austin TX,05/09/2022,,Active
+E102925,Rodriguez,Nia,Sales,Sales Development Rep,Austin TX,05/31/2012,,Active
+E102928,Gonzalez,Rebecca,Marketing,Brand Manager,Remote - US,02/08/2014,,Active
+E102934,Thomas,Steven,Engineering,DevOps Engineer,Columbus OH,08/09/2013,,Active
+E102937,Garcia,Stephanie,Customer Service,Support Representative,Toronto ON,02/26/2021,02/10/2026,Terminated
+E102942,Jones,Deborah,Engineering,Senior Software Engineer,Manila PH,10/17/2012,,Active
+E102955,Wilson,Andrew,Customer Service,Escalations Specialist,Toronto ON,07/13/2010,,Active
+E102972,Rodriguez,Sandra,Operations,Warehouse Supervisor,Manila PH,02/16/2010,,Active
+E102984,Adams,Michael,Information Technology,Systems Administrator,Columbus OH,12/25/2023,,Active
+E103003,Lopez,Charles,Engineering,QA Engineer,Remote - US,06/23/2018,,Active
+E103010,Thompson,Kimberly,Engineering,DevOps Engineer,Columbus OH,06/09/2022,,Active
+E103019,Smith,David,Marketing,Brand Manager,Remote - US,12/07/2010,,Active
+E103023,Flores,Andrew,Customer Service,Support Representative,Columbus OH,09/01/2020,11/06/2024,Terminated
+E103030,Baker,Sarah,Human Resources,HR Generalist,Toronto ON,06/04/2011,,Active
+E103039,Martinez,Margaret,Information Technology,Systems Administrator,Remote - US,03/23/2018,,Active
+E103052,Green,Maria,Legal & Compliance,Contracts Manager,Austin TX,08/17/2020,,Active
+E103057,Flores,Susan,Engineering,DevOps Engineer,Toronto ON,10/13/2025,,Active
+E103063,Kowalski,Stephanie,Engineering,Senior Software Engineer,Columbus OH,02/22/2013,,Active
+E103067,Sanchez,Amanda,Customer Service,Escalations Specialist,Columbus OH,11/20/2017,,Active
+E103083,Andersson,Maria,Operations,Logistics Coordinator,Remote - US,09/06/2021,,Active
+E103089,Jackson,Christopher,Sales,Sales Development Rep,Austin TX,12/16/2013,11/25/2025,Terminated
+E103107,Green,Timothy,Operations,Warehouse Supervisor,Columbus OH,07/20/2015,,Active
+E103111,Andersson,Margaret,Sales,Sales Development Rep,Remote - US,11/14/2019,,Active
+E103128,Lewis,Rebecca,Human Resources,Recruiter,Columbus OH,12/10/2012,,Active
+E103139,Nelson,Mateo,Operations,Operations Manager,Columbus OH,08/02/2009,,Active
+E103145,Williams,Donald,Information Technology,Security Analyst,Columbus OH,03/30/2012,,Active
+E103153,Rivera,Anika,Operations,Operations Manager,Columbus OH,09/30/2019,,Active
+E103168,Thompson,Lisa,Sales,Account Executive,Remote - US,11/05/2022,,Active
+E103183,Green,James,Sales,Regional Sales Manager,Columbus OH,08/18/2021,,Active
+E103188,Hernandez,Joseph,Operations,Production Planner,Manila PH,03/31/2019,,Active
+E103194,Baker,Paul,Finance,Financial Analyst,Remote - US,06/26/2016,,Active
+E103212,Torres,Elizabeth,Engineering,Senior Software Engineer,Columbus OH,03/02/2010,,Active
+E103217,Hernandez,Andrew,Finance,Financial Analyst,Columbus OH,10/26/2012,,Active
+E103231,Haddad,Omar,Operations,Warehouse Supervisor,Remote - US,10/23/2019,,Active
+E103237,Davis,Carol,Information Technology,Database Administrator,Columbus OH,02/11/2016,,Active
+E103240,Young,Chloe,Sales,Regional Sales Manager,Columbus OH,03/13/2018,12/03/2025,Terminated
+E103254,Thompson,Carol,Sales,Regional Sales Manager,Manila PH,07/18/2012,06/01/2026,Terminated
+E103265,Rodriguez,Betty,Operations,Warehouse Supervisor,Remote - US,09/27/2024,,Active
+E103280,Jones,Wei,Marketing,Demand Gen Manager,Columbus OH,12/23/2020,,Active
+E103297,Garcia,Ashley,Engineering,DevOps Engineer,Columbus OH,04/26/2019,,Active
+E103308,Patel,Kevin,Information Technology,Cloud Engineer,Toronto ON,09/19/2016,,Active
+E103313,Flores,Ashley,Information Technology,Security Analyst,Toronto ON,10/03/2013,05/30/2024,Terminated
+E103331,Clark,Sofia,Human Resources,HR Director,Remote - US,10/15/2022,,Active
+E103345,Patel,Linda,Customer Service,Support Team Lead,Austin TX,10/22/2011,,Active
+E103349,Brown,Ingrid,Marketing,Marketing Coordinator,Austin TX,01/10/2012,,Active
+E103363,Haddad,Anthony,Legal & Compliance,Paralegal,Toronto ON,02/06/2010,,Active
+E103369,Williams,Betty,Information Technology,Cloud Engineer,Remote - US,07/28/2011,,Active
+E103384,Andersson,David,Engineering,Software Engineer I,Columbus OH,02/28/2009,,Active
+E103395,Lewis,Elizabeth,Information Technology,Help Desk Analyst,Columbus OH,05/03/2019,,Active
+E103409,Martin,Anthony,Information Technology,Database Administrator,Columbus OH,02/20/2017,,Active
+E103427,Allen,Thomas,Information Technology,Network Engineer,Columbus OH,08/29/2011,04/12/2026,Terminated
+E103437,Wilson,Jessica,Engineering,Software Engineer II,Columbus OH,04/04/2010,05/30/2025,Terminated
+E103441,Harris,Daniel,Customer Service,Support Representative,Columbus OH,04/17/2011,,Active
+E103451,Adams,David,Operations,Logistics Coordinator,Columbus OH,05/27/2020,,Active
+E103457,Moore,Carol,Engineering,QA Engineer,Remote - US,09/19/2015,,Active
+E103465,Jones,Jennifer,Engineering,Engineering Manager,Columbus OH,08/03/2009,,Active
+E103471,Wright,Karen,Marketing,Demand Gen Manager,Remote - US,11/15/2014,,Active
+E103487,Torres,Zara,Finance,Senior Accountant,Toronto ON,05/31/2025,01/07/2026,Terminated
+E103505,Hernandez,Chloe,Engineering,DevOps Engineer,Remote - US,10/06/2025,08/04/2026,Terminated
+E103517,Harris,Margaret,Operations,Operations Analyst,Remote - US,04/20/2009,,Active
+E103531,Roberts,Lisa,Information Technology,Cloud Engineer,Toronto ON,08/30/2011,,Active
+E103543,Taylor,Sandra,Finance,AP Specialist,Columbus OH,07/02/2026,,Active
+E103562,Torres,Andrew,Information Technology,Database Administrator,Remote - US,09/28/2025,,Active
+E103573,Kimura,Nia,Sales,Sales Operations Analyst,Columbus OH,04/07/2021,,Active
+E103577,Davis,Kwame,Customer Service,Support Team Lead,Columbus OH,07/07/2010,06/20/2024,Terminated
+E103593,King,Ravi,Sales,Regional Sales Manager,Columbus OH,09/08/2017,,Active
+E103604,Scott,Ravi,Customer Service,Escalations Specialist,Remote - US,08/13/2017,07/11/2025,Terminated
+E103623,Thomas,Andrew,Legal & Compliance,Paralegal,Toronto ON,03/14/2023,12/05/2025,Terminated
+E103627,Jackson,Lisa,Information Technology,IT Manager,Remote - US,11/17/2015,,Active
+E103646,Hall,Brian,Customer Service,Support Representative,Columbus OH,02/22/2025,,Active
+E103652,Brown,Tomas,Operations,Operations Manager,Remote - US,04/16/2014,,Active
+E103655,Lopez,Ravi,Legal & Compliance,Paralegal,Toronto ON,10/08/2018,,Active
+E103667,Lee,Sandra,Human Resources,Recruiter,Remote - US,04/21/2017,,Active
+E103670,Baker,Yuki,Sales,Regional Sales Manager,Remote - US,11/01/2015,,Active
+E103688,Johnson,Wei,Sales,Sales Operations Analyst,Manila PH,02/22/2017,,Active
+E103701,Allen,Anthony,Human Resources,Recruiter,Austin TX,06/14/2010,,Active
+E103719,Robinson,Omar,Customer Service,Support Representative,Remote - US,11/08/2018,,Active
+E103737,Wilson,Jennifer,Sales,Sales Development Rep,Austin TX,04/13/2016,,Active
+E103753,Allen,Donna,Operations,Logistics Coordinator,Austin TX,08/05/2011,,Active
+E103761,Young,Ahmed,Information Technology,Cloud Engineer,Manila PH,04/14/2023,,Active
+E103766,Lewis,Donald,Sales,Account Executive,Remote - US,12/26/2016,,Active
+E103772,Martin,Mateo,Information Technology,Cloud Engineer,Columbus OH,06/26/2025,03/22/2026,Terminated
+E103776,Thompson,Ravi,Human Resources,HR Business Partner,Austin TX,12/12/2010,,Active
+E103792,Perez,Rebecca,Operations,Production Planner,Remote - US,06/12/2022,,Active
+E103799,Scott,Kwame,Finance,Staff Accountant,Toronto ON,12/14/2011,,Active
+E103816,Nguyen,Timothy,Sales,Regional Sales Manager,Austin TX,03/05/2020,,Active
+E103831,Walker,Tomas,Engineering,Senior Software Engineer,Columbus OH,12/15/2014,02/06/2026,Terminated
+E103844,Thomas,Melissa,Sales,Sales Operations Analyst,Toronto ON,11/29/2023,,Active
+E103852,Martinez,Kwame,Information Technology,Security Analyst,Manila PH,08/31/2012,11/21/2025,Terminated
+E103869,Wright,Kwame,Marketing,Marketing Coordinator,Columbus OH,09/28/2011,,Active
+E103875,Haddad,David,Information Technology,Network Engineer,Columbus OH,03/09/2017,04/05/2024,Terminated
+E103891,Kowalski,Sarah,Engineering,DevOps Engineer,Columbus OH,12/30/2025,04/15/2026,Terminated
+E103904,Williams,Anika,Operations,Operations Manager,Columbus OH,03/20/2011,04/14/2024,Terminated
+E103920,Nelson,Linda,Engineering,DevOps Engineer,Columbus OH,08/29/2017,,Active
+E103928,Mitchell,Tomas,Sales,Sales Development Rep,Manila PH,11/17/2024,,Active
+E103944,Brown,Melissa,Finance,Accounting Manager,Manila PH,10/06/2023,,Active
+E103955,Lopez,Paul,Operations,Operations Manager,Columbus OH,04/15/2012,,Active
+E103958,Moore,Diego,Legal & Compliance,Compliance Analyst,Austin TX,05/12/2022,03/21/2024,Terminated
+E103970,Kimura,Kenneth,Marketing,Content Strategist,Columbus OH,02/22/2021,,Active
+E103977,White,Christopher,Sales,Sales Operations Analyst,Remote - US,09/30/2015,,Active
+E103981,Johnson,Charles,Sales,Account Executive,Toronto ON,05/25/2017,,Active
+E104000,Okafor,Susan,Marketing,Content Strategist,Austin TX,12/22/2023,,Active
+E104011,King,William,Engineering,Software Engineer I,Remote - US,04/30/2025,,Active
+E104015,Novak,Thomas,Engineering,QA Engineer,Remote - US,06/30/2009,,Active
+E104032,Rossi,Mark,Sales,Sales Operations Analyst,Remote - US,08/31/2022,,Active
+E104043,Jackson,Anika,Operations,Operations Analyst,Toronto ON,09/18/2025,03/20/2026,Terminated
+E104051,Flores,Donald,Customer Service,Support Representative,Austin TX,03/22/2019,,Active
+E104059,Campbell,Kenneth,Marketing,Demand Gen Manager,Manila PH,06/29/2011,,Active
+E104067,Anderson,Melissa,Engineering,Senior Software Engineer,Columbus OH,11/14/2012,,Active
+E104071,Brown,Kimberly,Operations,Warehouse Supervisor,Austin TX,03/10/2022,,Active
+E104088,Taylor,Omar,Information Technology,Security Analyst,Remote - US,09/05/2022,,Active
+E104103,Sanchez,Ravi,Engineering,Engineering Manager,Toronto ON,09/16/2018,,Active
+E104112,Mitchell,George,Sales,Regional Sales Manager,Toronto ON,08/04/2021,,Active
+E104130,Nelson,Chloe,Operations,Operations Manager,Austin TX,09/09/2020,12/28/2024,Terminated
+E104134,Smith,Carol,Information Technology,Systems Administrator,Remote - US,03/21/2016,,Active
+E104144,Silva,Steven,Engineering,Software Engineer II,Austin TX,05/08/2025,08/25/2026,Terminated
+E104158,Lopez,Ashley,Engineering,Software Engineer I,Remote - US,01/26/2015,10/17/2025,Terminated
+E104168,Thompson,Omar,Sales,Regional Sales Manager,Remote - US,07/31/2011,,Active
+E104171,White,Priya,Operations,Logistics Coordinator,Austin TX,12/08/2018,,Active
+E104184,Nguyen,Betty,Marketing,Demand Gen Manager,Columbus OH,12/19/2024,,Active
+E104193,Martin,Ashley,Information Technology,Security Analyst,Columbus OH,05/18/2011,,Active
+E104211,Baker,Sofia,Finance,Controller,Remote - US,08/09/2018,,Active
+E104225,Perez,Susan,Legal & Compliance,Paralegal,Columbus OH,05/13/2025,,Active
+E104238,Clark,Ronald,Finance,Financial Analyst,Columbus OH,12/27/2017,08/07/2025,Terminated
+E104256,Adams,Lisa,Operations,Logistics Coordinator,Remote - US,06/12/2022,,Active
+E104270,Walker,Diego,Marketing,Brand Manager,Remote - US,01/06/2016,,Active
+E104279,Clark,Maria,Information Technology,Help Desk Analyst,Remote - US,01/31/2018,,Active
+E104282,Scott,Ronald,Engineering,Senior Software Engineer,Columbus OH,12/06/2020,,Active
+E104297,Jackson,Kenneth,Operations,Production Planner,Remote - US,04/21/2018,,Active
+E104314,Scott,Elizabeth,Customer Service,Escalations Specialist,Remote - US,01/28/2016,02/27/2024,Terminated
+E104325,Williams,Ronald,Customer Service,Support Representative,Remote - US,10/23/2019,,Active
+E104338,Anderson,Matthew,Marketing,Content Strategist,Toronto ON,03/28/2021,,Active
+E104342,Perez,Priya,Information Technology,Systems Administrator,Columbus OH,06/27/2025,08/15/2026,Terminated
+E104347,Nguyen,Susan,Marketing,Marketing Coordinator,Austin TX,05/17/2014,,Active
+E104365,Taylor,Jessica,Marketing,Content Strategist,Remote - US,12/09/2025,,Active
+E104369,Brown,Kwame,Sales,Sales Development Rep,Austin TX,02/20/2021,,Active
+E104379,Allen,Linda,Finance,Accounting Manager,Columbus OH,07/21/2022,,Active
+E104397,Jackson,James,Finance,Senior Accountant,Austin TX,05/09/2022,,Active
+E104400,Roberts,Donna,Operations,Production Planner,Remote - US,07/01/2019,12/14/2025,Terminated
+E104416,King,Carol,Legal & Compliance,Paralegal,Manila PH,01/03/2018,,Active
+E104426,Wilson,Michael,Engineering,Software Engineer II,Toronto ON,05/08/2011,,Active
+E104444,Andersson,William,Finance,AP Specialist,Manila PH,08/29/2024,,Active
+E104452,Nguyen,Kevin,Information Technology,IT Manager,Toronto ON,06/28/2017,04/24/2026,Terminated
+E104462,Young,Karen,Human Resources,Recruiter,Toronto ON,12/14/2017,,Active
+E104473,Baker,George,Operations,Operations Manager,Remote - US,02/14/2012,,Active
+E104478,Thompson,Tomas,Engineering,Engineering Manager,Columbus OH,11/07/2013,,Active
+E104486,Nelson,Luca,Marketing,Content Strategist,Toronto ON,04/05/2019,,Active
+E104505,Thompson,Stephanie,Information Technology,Systems Administrator,Remote - US,06/26/2018,06/26/2025,Terminated
+E104520,King,Joseph,Finance,Staff Accountant,Manila PH,06/08/2024,,Active
+E104525,Kowalski,Patricia,Customer Service,Support Representative,Columbus OH,09/11/2025,,Active
+E104528,Martin,Karen,Finance,Staff Accountant,Toronto ON,04/04/2025,,Active
+E104539,Allen,Rebecca,Engineering,Software Engineer II,Columbus OH,03/02/2016,,Active
+E104556,Patel,Sarah,Operations,Logistics Coordinator,Columbus OH,03/07/2020,,Active
+E104565,Walker,Paul,Operations,Warehouse Supervisor,Austin TX,12/22/2017,,Active
+E104583,Robinson,Amanda,Operations,Operations Analyst,Remote - US,09/12/2009,10/01/2025,Terminated
+E104586,Lopez,Sandra,Engineering,DevOps Engineer,Remote - US,07/15/2016,,Active
+E104597,Nelson,Amanda,Engineering,Engineering Manager,Remote - US,04/18/2024,,Active
+E104606,Nelson,Sandra,Information Technology,Database Administrator,Austin TX,02/16/2025,,Active
+E104609,Moore,Steven,Legal & Compliance,Paralegal,Columbus OH,02/07/2019,,Active
+E104621,Gonzalez,Christopher,Engineering,QA Engineer,Remote - US,03/09/2020,,Active
+E104632,Rossi,Thomas,Sales,Sales Operations Analyst,Columbus OH,07/26/2019,10/30/2024,Terminated
+E104644,Lewis,Ahmed,Sales,Sales Development Rep,Toronto ON,12/31/2022,03/07/2025,Terminated
+E104649,Roberts,Omar,Customer Service,Escalations Specialist,Remote - US,04/01/2022,,Active
+E104657,Andersson,Kevin,Operations,Operations Analyst,Remote - US,07/27/2020,,Active
+E104665,Hall,Amanda,Sales,Account Executive,Columbus OH,07/01/2009,,Active
+E104668,Davis,Zara,Operations,Warehouse Supervisor,Austin TX,11/30/2014,,Active
+E104687,Rivera,Charles,Engineering,DevOps Engineer,Toronto ON,06/13/2023,,Active
+E104694,Martinez,James,Sales,Account Executive,Columbus OH,06/04/2014,03/05/2025,Terminated
+E104709,Patel,Thomas,Sales,Sales Operations Analyst,Columbus OH,12/01/2016,,Active
+E104717,Nelson,Rebecca,Information Technology,Security Analyst,Columbus OH,12/19/2018,,Active
+E104733,Thomas,Christopher,Engineering,Engineering Manager,Remote - US,11/29/2011,,Active
+E104747,Torres,Ingrid,Customer Service,Support Representative,Austin TX,09/10/2024,06/01/2026,Terminated
+E104763,Scott,Wei,Information Technology,Cloud Engineer,Remote - US,05/26/2026,,Active
+E104768,Wright,Chloe,Sales,Sales Development Rep,Remote - US,06/26/2009,,Active
+E104784,Rossi,Carol,Marketing,Demand Gen Manager,Remote - US,08/10/2013,,Active
+E104800,Dubois,Lisa,Engineering,Senior Software Engineer,Columbus OH,02/27/2011,,Active
+E104807,Thomas,Wei,Engineering,Senior Software Engineer,Austin TX,07/21/2014,02/17/2026,Terminated
+E104812,Roberts,Robert,Customer Service,Escalations Specialist,Columbus OH,04/09/2013,,Active
+E104822,Sanchez,Kenneth,Engineering,Engineering Manager,Toronto ON,06/21/2012,,Active
+E104833,Rivera,Jessica,Customer Service,Support Team Lead,Columbus OH,06/05/2018,,Active
+E104838,Harris,Ingrid,Operations,Operations Analyst,Manila PH,07/29/2017,,Active
+E104850,Johnson,William,Engineering,DevOps Engineer,Remote - US,02/18/2013,,Active
+E104859,Campbell,Ravi,Engineering,Senior Software Engineer,Columbus OH,02/09/2011,,Active
+E104864,Scott,Karen,Sales,Sales Operations Analyst,Manila PH,06/07/2012,,Active
+E104871,Adams,Fatima,Operations,Operations Manager,Remote - US,07/29/2014,,Active
+E104880,Clark,Andrew,Engineering,QA Engineer,Remote - US,03/30/2018,,Active
+E104899,Martinez,Anthony,Information Technology,Cloud Engineer,Columbus OH,12/17/2019,,Active
+E104907,King,Melissa,Information Technology,IT Manager,Columbus OH,11/01/2020,,Active
+E104922,Allen,Timothy,Sales,Sales Development Rep,Columbus OH,06/29/2018,,Active
+E104938,Jones,Elizabeth,Engineering,Software Engineer II,Manila PH,09/14/2016,,Active
+E104943,Garcia,Tomas,Information Technology,Systems Administrator,Remote - US,05/10/2009,,Active
+E104961,Hernandez,Tomas,Sales,Account Executive,Toronto ON,07/26/2015,,Active
+E104974,Lee,Kenneth,Operations,Operations Analyst,Remote - US,05/19/2022,07/25/2025,Terminated
+E104988,Adams,Nancy,Operations,Production Planner,Columbus OH,02/19/2020,,Active
+E105005,Andersson,Elena,Operations,Logistics Coordinator,Remote - US,09/13/2015,,Active
+E105008,Green,Mateo,Marketing,Brand Manager,Manila PH,04/09/2020,04/20/2025,Terminated
+E105024,Smith,Amanda,Sales,Regional Sales Manager,Remote - US,10/04/2018,,Active
+E105033,Mitchell,Wei,Sales,Account Executive,Austin TX,09/28/2016,,Active
+E105036,King,Paul,Human Resources,HR Director,Austin TX,11/11/2013,04/27/2025,Terminated
+E105045,Gonzalez,Richard,Finance,Financial Analyst,Columbus OH,02/16/2012,01/20/2024,Terminated
+E105062,Novak,Robert,Customer Service,Support Team Lead,Columbus OH,05/01/2026,,Active
+E105080,Dubois,Ashley,Engineering,Software Engineer II,Austin TX,12/21/2013,,Active
+E105090,Novak,Joshua,Finance,Controller,Remote - US,04/06/2020,,Active
+E105099,Carter,Jessica,Engineering,Engineering Manager,Austin TX,07/25/2011,,Active
+E105109,Nguyen,Ashley,Operations,Production Planner,Austin TX,12/13/2025,02/22/2026,Terminated
+E105124,Baker,Amanda,Engineering,Software Engineer I,Columbus OH,01/19/2023,,Active
+E105134,Smith,Priya,Customer Service,Support Team Lead,Columbus OH,03/30/2018,,Active
+E105148,Kimura,Wei,Finance,Staff Accountant,Columbus OH,04/19/2013,,Active
+E105151,Hernandez,Anthony,Engineering,Senior Software Engineer,Remote - US,10/03/2018,08/21/2026,Terminated
+E105166,Hernandez,Paul,Engineering,DevOps Engineer,Columbus OH,04/19/2011,,Active
+E105182,Kowalski,Timothy,Information Technology,Network Engineer,Columbus OH,08/02/2017,04/10/2024,Terminated
+E105194,Rossi,Jessica,Human Resources,Recruiter,Remote - US,10/21/2009,,Active
+E105207,Mitchell,Rebecca,Sales,Sales Operations Analyst,Toronto ON,05/24/2012,,Active
+E105221,Campbell,Ashley,Sales,Regional Sales Manager,Austin TX,03/25/2018,,Active
+E105236,Silva,Sofia,Operations,Warehouse Supervisor,Manila PH,09/11/2012,,Active
+E105249,Okafor,Luca,Finance,Accounting Manager,Remote - US,11/22/2023,,Active
+E105267,Brown,Joshua,Customer Service,Support Team Lead,Columbus OH,11/05/2025,,Active
+E105277,Lopez,Sarah,Engineering,QA Engineer,Manila PH,08/12/2012,,Active
+E105281,Martinez,Rebecca,Sales,Regional Sales Manager,Austin TX,07/20/2010,,Active
+E105299,Hall,Maria,Information Technology,Network Engineer,Remote - US,09/13/2016,12/03/2024,Terminated
+E105302,Johnson,Melissa,Sales,Sales Development Rep,Columbus OH,05/08/2023,,Active
+E105320,Adams,Amanda,Operations,Warehouse Supervisor,Columbus OH,01/03/2023,05/09/2024,Terminated
+E105325,Hernandez,Zara,Finance,Senior Accountant,Remote - US,06/14/2014,,Active
+E105336,Flores,Nia,Customer Service,Escalations Specialist,Austin TX,06/30/2016,,Active
+E105348,Martin,Mark,Engineering,Senior Software Engineer,Remote - US,08/23/2017,,Active
+E105351,Scott,Lisa,Sales,Sales Development Rep,Remote - US,08/14/2015,07/22/2025,Terminated
+E105361,Campbell,Nancy,Sales,Account Executive,Columbus OH,08/10/2024,,Active
+E105380,Hill,Ingrid,Sales,Regional Sales Manager,Toronto ON,10/28/2019,,Active
+E105387,White,Charles,Finance,Accounting Manager,Manila PH,02/15/2014,,Active
+E105398,Scott,Elena,Engineering,Engineering Manager,Toronto ON,07/01/2010,,Active
