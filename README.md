@@ -59,7 +59,7 @@ audit rather than development, and this documents the language as I learn it.
 | ID | Control objective | Status |
 |---|---|---|
 | LA-01 | Access revoked timely upon separation | Complete |
-| LA-02 | Accounts attributable to an authorized individual | Not started |
+| LA-02 | Accounts attributable to an authorized individual | Complete |
 | LA-03 | Inactive accounts identified and disabled | Not started |
 | LA-04 | Privileged access requires MFA | Not started |
 | LA-05 | Credentials rotated per policy | Not started |
@@ -72,7 +72,7 @@ audit rather than development, and this documents the language as I learn it.
 | Measure | Result |
 |---|---|
 | HR population | 487 |
-| Directory accounts | 496 |
+| Directory accounts | 500 |
 | Terminated personnel | 91 |
 | Terminated retaining enabled accounts | 24 (26%) |
 | Of those, holding privileged access | 5 |

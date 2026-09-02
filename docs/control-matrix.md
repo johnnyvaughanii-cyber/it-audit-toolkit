@@ -4,7 +4,7 @@ Ongoing. Control objectives are added as they are built, organized by ITGC
 domain. Each maps to one test script and one or more workpapers.
 
 Current population as of: 08/29/2026
-Populations: 487 HR records · 496 directory accounts
+Populations: 487 HR records · 500 directory accounts
 
 **Status key:** Complete · In progress · Ready (test data exists) ·
 Blocked (needs additional extract)
@@ -19,7 +19,7 @@ most examined in SOX ITGC and FFIEC engagements.
 | ID | Control objective | Test method | Status |
 |---|---|---|---|
 | LA-01 | Access is revoked timely upon separation | Full-population reconciliation of HR termination listing to directory extract | Complete |
-| LA-02 | Directory accounts are attributable to an authorized individual | Accounts with no corresponding HR record; classify service, shared, vendor | Ready |
+| LA-02 | Directory accounts are attributable to an authorized individual | Accounts with no corresponding HR record; classify service, shared, vendor | Complete |
 | LA-03 | Inactive accounts are identified and disabled | Enabled accounts with no authentication activity exceeding 90 days | Ready |
 | LA-04 | Privileged access requires multi-factor authentication | Privileged group membership tested for MFA enrollment | Ready |
 | LA-05 | Credentials are rotated in accordance with policy | Password age exceeding 365 days on enabled accounts | Ready |
