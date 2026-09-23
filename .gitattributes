@@ -1,0 +1,11 @@
+# Line-ending handling.
+#
+# Scripts and documentation are normalized so they render consistently on any
+# platform. Population extracts under data/ are stored byte-for-byte as
+# received, so their hashes stay stable — a data file that reports as modified
+# should mean the population changed, not that Windows rewrote line endings.
+
+*.ps1  text eol=crlf
+*.md   text eol=lf
+
+data/** -text
