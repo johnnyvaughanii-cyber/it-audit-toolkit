@@ -1,3 +1,23 @@
+# =============================================================
+#  WP-LA-05 | Dormant Account Review
+# -------------------------------------------------------------
+#  Control objective : Inactive accounts are identified and
+#                      disabled.
+#
+#  Framework ref     : SOX ITGC - Access to Programs and Data
+#                      FFIEC IT Handbook - Information Security
+#                      COBIT 5 DSS05.04
+#
+#  Method            : Full-population test of enabled accounts
+#                      against a 90-day inactivity threshold.
+#                      No sampling.
+#
+#  Data access       : Read-only. This script does not create,
+#                      modify, or disable any account.
+#
+#  Population as of  : 08/29/2026
+# =============================================================
+
 $auditPath = "C:\Projects\it-audit-toolkit"
 
 $pop = Import-Csv "$auditPath\data\hr_roster.csv"

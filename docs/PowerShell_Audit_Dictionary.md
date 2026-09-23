@@ -130,6 +130,106 @@ Notes:
 
 ---
 
+## Git
+
+Version control. Run these in the VS Code terminal, from the repository folder.
+
+### One-time setup
+
+| Command | Does |
+|---|---|
+| `git --version` | Confirm git is installed. |
+| `git config --global user.name "Name"` | Set the name attached to commits. `--global` applies to every repository on the machine. |
+| `git config --global user.email "address"` | Set the email. Must match the GitHub account or commits will not link to the profile. |
+
+### Starting a repository
+
+| Command | Does |
+|---|---|
+| `git init` | Begin tracking this folder. Creates a hidden `.git` folder. |
+| `git branch -M main` | Rename the current branch to `main`. Git's old default is `master`; GitHub expects `main`. |
+| `git remote add origin <url>` | Register the GitHub address. `origin` is the conventional nickname, not a keyword. |
+| `git remote -v` | List registered addresses. Should show one `fetch` and one `push` line. |
+
+Create the repository on GitHub with **no** README, .gitignore, or license.
+Initializing on both ends creates two histories with no shared starting point,
+and the first push is rejected.
+
+### The routine
+
+| Command | Does |
+|---|---|
+| `git add .` | Stage everything in this folder and below. Staging is a holding step; nothing is recorded yet. |
+| `git status` | Show what is staged. Read this before every commit. |
+| `git commit -m "message"` | Record the staged files as a permanent snapshot. Quotes are required. |
+| `git push` | Send commits to GitHub. Works bare after the first `push -u origin main`. |
+| `git log --oneline -3` | Show the last three commits. |
+
+After the first push, the routine is three commands: `git add .`, `git commit -m "..."`, `git push`.
+
+**Read `git status` before committing.** It is the last checkpoint before files
+become part of a public repository, and the same instinct as reviewing an
+extract before testing it. It is the step that keeps client data out.
+
+### Checking and undoing
+
+| Command | Does |
+|---|---|
+| `git diff --stat <file>` | Summarize what changed in a file. |
+| `git diff --ignore-all-space --numstat <file>` | Same, ignoring whitespace. Empty output means only line endings changed. |
+| `git checkout -- <file>` | Discard local changes to a file and restore the committed version. |
+| `git add --renormalize .` | Re-apply line-ending rules to every tracked file after changing `.gitattributes`. |
+
+### Credentials
+
+GitHub does not accept account passwords. When prompted for one, supply a
+personal access token instead: GitHub → Settings → Developer settings →
+Personal access tokens → Fine-grained, with Contents set to read/write.
+
+### `.gitignore`
+
+Lists what git should not track. Generated output does not belong in a
+repository — a committed workpaper goes stale and drifts from what the script
+actually produces.
+
+```
+workpapers/*
+!workpapers/.gitkeep
+```
+
+`!` means "except this." Git tracks files, not folders, so an empty folder does
+not exist to git. `.gitkeep` is a zero-byte placeholder that keeps the folder
+alive through a clone. The name is convention, not a git feature.
+
+### `.gitattributes`
+
+Controls line-ending handling. Windows ends lines with two characters (CRLF),
+Linux and Mac with one (LF). Without rules, files rewritten by Windows show as
+fully modified when nothing in them changed.
+
+```
+*.ps1  text eol=crlf
+*.md   text eol=lf
+data/** -text
+```
+
+`-text` tells git to leave population extracts byte-for-byte, so their hashes
+stay stable. In an audit repository, a data file reporting as modified should
+mean the population changed.
+
+### Other commands used
+
+| Command | Does |
+|---|---|
+| `cd <path>` | Move into a folder. |
+| `Remove-Item <file>` | Delete a file. |
+
+`.git\index.lock` is git's "busy" marker. It normally deletes itself. If a
+command is interrupted and leaves it behind, git refuses to run until it is
+removed.
+
+---
+
 # Lesson Log
 
 ## LA-00 — Population Import and Stratification
