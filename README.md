@@ -60,7 +60,7 @@ audit rather than development, and this documents the language as I learn it.
 |---|---|---|
 | LA-01 | Access revoked timely upon separation | Complete |
 | LA-02 | Accounts attributable to an authorized individual | Complete |
-| LA-03 | Inactive accounts identified and disabled | Not started |
+| LA-03 | Inactive accounts identified and disabled | Complete |
 | LA-04 | Privileged access requires MFA | Not started |
 | LA-05 | Credentials rotated per policy | Not started |
 | LA-06 | Privileged access appropriately segregated | Not started |

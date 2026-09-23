@@ -2,7 +2,7 @@
 
 Running reference. Updated after each control objective.
 
-Last updated: LA-02 complete — Orphaned Accounts
+Last updated: LA-03 complete — Dormant Accounts
 
 ---
 
@@ -22,6 +22,11 @@ Last updated: LA-02 complete — Orphaned Accounts
 | `{ }` | Holds a test or a block of instructions. |
 | `$_` | "The row I'm currently looking at." Only used inside `{ }`. |
 | `#` | Everything after this on the line is a comment, ignored when run. |
+| `[0]` | Pick an item by position. Counting starts at zero, so `[0]` is the first. |
+| `*` | All columns. |
+| `@{ }` | A definition block with labeled parts, used to build a new column. |
+| `[datetime]` | Convert the text that follows into a real date. |
+| `( )` | Do what is inside these first, before anything else. |
 
 ---
 
@@ -55,7 +60,7 @@ PowerShell commands are called **cmdlets**. Always verb-noun.
 | `-in` | Is found somewhere in this list | yes |
 | `-and` | Both conditions must be true | yes |
 | `-gt` | Greater than | not yet |
-| `-lt` | Less than | not yet |
+| `-lt` | Less than | yes |
 | `-ge` | Greater than or equal to | not yet |
 | `-le` | Less than or equal to | not yet |
 | `-like` | Matches a pattern, using `*` as wildcard | not yet |
@@ -69,11 +74,43 @@ PowerShell commands are called **cmdlets**. Always verb-noun.
 
 | Option | Attaches to | Does |
 |---|---|---|
-| `-First 3` | `Select-Object` | Only the first 3 rows. |
+| `-First n` | `Select-Object` | Only the first n rows. Belongs to `Select-Object`, not `Format-Table`. |
 | `-Descending` | `Sort-Object` | Largest to smallest. |
 | `-NoTypeInformation` | `Export-Csv` | Drops a junk header line Excel does not want. |
 | `-Count 25` | `Get-Random` | Pull 25 items. |
 | `-SetSeed 20260829` | `Get-Random` | Fixes the randomness so it repeats identically. |
+
+---
+
+## Working with Dates
+
+`Import-Csv` reads every value as **text**, not as a date. Text comparisons
+sort alphabetically, so a date test built on unconverted text returns a wrong
+answer with no error.
+
+| Piece | Means |
+|---|---|
+| `.GetType().Name` | Ask what kind of thing a value actually is. Returns `String` before conversion, `DateTime` after. |
+| `[datetime]"08/29/2026"` | Convert text into a real date. |
+| `.AddDays(n)` | Move a date forward by n days. Negative moves backward. |
+| `$dateA - $dateB` | Subtract two dates. Returns a span of time. |
+| `.Days` | From a span of time, pull just the whole number of days. |
+
+**Add a converted column rather than replacing the original.** The source value
+stays visible in the workpaper beside the converted one, so the transformation
+is documented rather than hidden.
+
+```powershell
+$ad = $ad | Select-Object *, @{
+    Name       = "LogonDate"
+    Expression = { [datetime]$_.LastLogonDate }
+}
+```
+
+**With dates, earlier is smaller.** `-lt` finds dates further in the past.
+Plain English runs opposite to the operator: "more than 90 days inactive" is a
+bigger number of days but a smaller date. Writing `-gt` by mistake runs cleanly
+and returns every *recently active* account.
 
 ---
 
@@ -222,6 +259,100 @@ $trueOrphans | Export-Csv "$auditPath\workpapers\WP-LA-04_Orphaned_Accounts.csv"
 
 ---
 
+## LA-03 — Dormant Accounts
+
+**Control objective:** Inactive accounts are identified and disabled.
+
+```powershell
+# --- Convert text to real dates ---
+# Import-Csv reads everything as text. The original LastLogonDate
+# column is left untouched; LogonDate is added beside it.
+$ad = $ad | Select-Object *, @{
+    Name       = "LogonDate"
+    Expression = { [datetime]$_.LastLogonDate }
+}
+
+# --- Set the threshold ---
+# As-of date is fixed, never "today" — a script anchored to the
+# current date returns different results on different days and
+# cannot be reperformed.
+$asOfDate    = [datetime]"08/29/2026"
+$dormantDays = 90
+$cutoff      = $asOfDate.AddDays(-$dormantDays)
+$cutoff                                         # 05/31/2026
+
+# --- Identify dormant accounts ---
+# -lt finds logon dates EARLIER than the cutoff.
+# The Enabled condition keeps properly disabled accounts out; a
+# disabled dormant account is the control working, not failing.
+$dormant = $ad | Where-Object {
+    $_.Enabled -eq "TRUE" -and $_.LogonDate -lt $cutoff
+}
+$dormant.Count                                  # 64
+
+# --- Add inactivity age ---
+$dormant = $dormant | Select-Object *, @{
+    Name       = "DaysInactive"
+    Expression = { ($asOfDate - $_.LogonDate).Days }
+}
+
+# --- Stratify by age, longest first ---
+$dormant |
+    Sort-Object DaysInactive -Descending |
+    Select-Object SamAccountName, DisplayName, Department, DaysInactive, PrivilegedGroup -First 15 |
+    Format-Table
+
+# --- Assess severity: privileged access ---
+$dormantPriv = $dormant | Where-Object { $_.PrivilegedGroup -ne "" }
+$dormantPriv.Count                              # 11
+
+# --- Retain evidence ---
+$dormant     | Sort-Object DaysInactive -Descending |
+    Export-Csv "$auditPath\workpapers\WP-LA-05_Dormant_Accounts.csv" -NoTypeInformation
+$dormantPriv | Sort-Object DaysInactive -Descending |
+    Export-Csv "$auditPath\workpapers\WP-LA-06_Dormant_Privileged_Accounts.csv" -NoTypeInformation
+```
+
+**Results:** 64 enabled accounts with no authentication activity exceeding 90
+days, of 500. 11 of the 64 carry privileged group membership. Longest
+inactivity 922 days.
+
+### Technique notes
+
+- **The silent failure.** Unconverted text compares alphabetically.
+  `"09/15/2024" -lt "07/23/2026"` returns `False` — it compares character by
+  character, hits 9 against 7, and never reaches the year. No error is raised.
+- **Fixed as-of date, not `Get-Date`.** A test anchored to the current date
+  produces different figures on different days and cannot be reperformed.
+- **Threshold as a named container.** `$dormantDays = 90` changes to 60 in one
+  place when the client's policy differs, and the threshold is visible to a
+  reviewer rather than buried in a comparison.
+- **Diagnostics are removed before the script is finished.** The `.GetType()`
+  lines proved the conversion worked and were deleted. A reviewer should not
+  have to work out which output is evidence.
+- **`-First` belongs to `Select-Object`.** On `Format-Table` it errors with "a
+  parameter cannot be found that matches parameter name 'First'" — the
+  signature of an option attached to the wrong cmdlet.
+
+### Audit notes
+
+- **Dormancy concentrates privilege.** 11 of 64 dormant accounts held
+  privileged groups — roughly one in six, against a far lower rate across the
+  population. Accounts nobody uses are accounts nobody reviews.
+- **Service account in Domain Admins, 552 days idle.** Either the job stopped
+  running unnoticed or it never required that privilege. Both point to
+  privilege granted at provisioning and never revisited.
+- **Vendor account in ERP_Superuser, 540 days idle.** Third-party access
+  outliving the engagement it was provisioned for.
+- **Cross-reference dormant privileged user accounts against the LA-01
+  terminated set** before writing them up. A dormant privileged account
+  belonging to current personnel is a different finding from one belonging to a
+  separated individual.
+- **Age drives severity.** 91 days is a hygiene observation. 922 days on an
+  enabled account is a standing exposure with no business owner.
+
+---
+
 ## Random Selection (reference — not yet run)
 
 **Audit purpose:** Converts a judgmental selection into a reproducible, reperformable one.
@@ -243,8 +374,8 @@ $sample | Export-Csv "$auditPath\sample_25.csv" -NoTypeInformation
 Seeded exception areas:
 1. Terminated users with enabled accounts — **LA-01, 24 found**
 2. Accounts not attributable to an HR record — **LA-02, 16 found (12 blank, 4 orphaned)**
-3. Dormant accounts exceeding 90 days — next
-4. Privileged accounts without MFA enrollment
+3. Dormant accounts exceeding 90 days — **LA-03, 64 found (11 privileged)**
+4. Privileged accounts without MFA enrollment — next
 5. Stale credentials past 365 days
 6. Segregation of duties conflicts across privileged groups
 
