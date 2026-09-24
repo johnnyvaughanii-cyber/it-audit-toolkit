@@ -40,7 +40,7 @@ Speed is not on this list. It is real, and it is the weakest argument.
 
 ```
 tests/        One script per control objective
-docs/         Control matrix and PowerShell reference
+docs/         Control matrix and test development log
 data/         Synthetic test populations
 workpapers/   Generated output (not committed)
 ```
@@ -48,9 +48,8 @@ workpapers/   Generated output (not committed)
 **`docs/control-matrix.md`** maps each control objective to its test method,
 script, workpaper, and framework reference. Start there.
 
-**`docs/PowerShell_Audit_Dictionary.md`** is a running reference of every
-command and technique used, with the audit rationale for each. I come from IT
-audit rather than development, and this documents the language as I learn it.
+**`docs/control-test-log.md`** records each test as built: the script as run,
+the technique notes behind it, and the reasoning for the method chosen.
 
 ---
 

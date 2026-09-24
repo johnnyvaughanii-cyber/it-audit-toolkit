@@ -14,6 +14,9 @@ workpapers/*
 /client/
 /prod/
 
+# Personal working reference, not part of the published toolkit
+docs/PowerShell_Audit_Dictionary.md
+
 # Windows
 Thumbs.db
 desktop.ini
