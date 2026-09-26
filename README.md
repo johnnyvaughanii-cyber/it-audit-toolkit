@@ -60,8 +60,8 @@ the technique notes behind it, and the reasoning for the method chosen.
 | LA-01 | Access revoked timely upon separation | Complete |
 | LA-02 | Accounts attributable to an authorized individual | Complete |
 | LA-03 | Inactive accounts identified and disabled | Complete |
-| LA-04 | Privileged access requires MFA | Not started |
-| LA-05 | Credentials rotated per policy | Not started |
+| LA-04 | Privileged access requires MFA | Complete |
+| LA-05 | Credentials rotated per policy | Complete |
 | LA-06 | Privileged access appropriately segregated | Not started |
 
 ---

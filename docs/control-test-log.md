@@ -228,6 +228,135 @@ inactivity 922 days.
 
 ---
 
+## LA-04 — Privileged Access Without MFA
+
+**Control objective:** Privileged access requires multi-factor authentication.
+
+```powershell
+# --- Privileged population ---
+# No HR roster. The test lives entirely inside the directory extract.
+$privileged = $ad | Where-Object { $_.PrivilegedGroup -ne "" }
+$privileged.Count                               # 53 of 500
+
+# --- Accounts without MFA ---
+$noMFA = $privileged | Where-Object { $_.MFAEnrolled -eq "FALSE" }
+$noMFA.Count                                    # 19
+
+# --- Review ---
+$noMFA |
+    Select-Object SamAccountName, DisplayName, Department, AccountType, PrivilegedGroup |
+    Format-Table
+
+# --- Stratify by account type ---
+$noMFA | Group-Object AccountType | Sort-Object Count -Descending | Format-Table Name, Count
+
+# --- Retain evidence ---
+$privileged | Export-Csv "$auditPath\workpapers\WP-LA-07_Privileged_Population.csv" -NoTypeInformation
+$noMFA      | Export-Csv "$auditPath\workpapers\WP-LA-08_Privileged_No_MFA.csv" -NoTypeInformation
+```
+
+**Results:** 53 privileged accounts of 500. 19 without MFA enrollment (36%).
+
+By account type: User 16, Shared 2, Service 1.
+
+By privileged group: ERP_Superuser 5, Domain Admins 5, Firewall_Admins 4,
+Backup Operators 3, Server Operators 2.
+
+### Technique notes
+
+- Single-population test. LA-01 through LA-03 compared two populations or
+  tested against a date; this one tests attributes within one extract, so the
+  population definition carries the judgment.
+- `-eq "FALSE"` compares against text. `Import-Csv` reads the column as the
+  word FALSE, not as a true/false value.
+- `AccountType` included in the output so service and shared accounts are
+  distinguishable from user accounts.
+
+### Audit notes
+
+- Population definition is the exposure. Scoping "privileged" to the groups
+  present in the extract understates it where privilege is also granted
+  outside group membership.
+- Shared and service accounts in the no-MFA set are a separate remediation
+  path from user accounts; MFA applicability differs.
+- Domain Admins and ERP_Superuser account for 10 of the 19.
+
+---
+
+## LA-05 — Stale Credentials
+
+**Control objective:** Credentials are rotated in accordance with policy.
+
+```powershell
+# --- Convert text to a real date ---
+$ad = $ad | Select-Object *, @{
+    Name       = "PwdSetDate"
+    Expression = { [datetime]$_.PasswordLastSet }
+}
+
+# --- Threshold ---
+$asOfDate  = [datetime]"08/29/2026"
+$maxPwdAge = 365
+$cutoff    = $asOfDate.AddDays(-$maxPwdAge)
+$cutoff                                         # 08/29/2025
+
+# --- Identify stale credentials ---
+$stalePwd = $ad | Where-Object {
+    $_.Enabled -eq "TRUE" -and $_.PwdSetDate -lt $cutoff
+}
+$stalePwd.Count                                 # 62
+
+# --- Add credential age ---
+$stalePwd = $stalePwd | Select-Object *, @{
+    Name       = "DaysSincePwdSet"
+    Expression = { ($asOfDate - $_.PwdSetDate).Days }
+}
+
+# --- Sort by age, oldest first ---
+$stalePwd |
+    Sort-Object DaysSincePwdSet -Descending |
+    Select-Object SamAccountName, DisplayName, Department, AccountType, DaysSincePwdSet, PrivilegedGroup -First 15 |
+    Format-Table
+
+# --- Privileged subset ---
+$stalePwdPriv = $stalePwd | Where-Object { $_.PrivilegedGroup -ne "" }
+$stalePwdPriv.Count                             # 9
+
+# --- Retain evidence ---
+$stalePwd     | Sort-Object DaysSincePwdSet -Descending |
+    Export-Csv "$auditPath\workpapers\WP-LA-09_Stale_Credentials.csv" -NoTypeInformation
+$stalePwdPriv | Sort-Object DaysSincePwdSet -Descending |
+    Export-Csv "$auditPath\workpapers\WP-LA-10_Stale_Credentials_Privileged.csv" -NoTypeInformation
+```
+
+**Results:** 62 enabled accounts with credentials past the 365-day threshold,
+of 500. 9 carry privileged group membership. Longest credential age 3,471 days.
+
+By account type: User 54, Service 5, Shared 3.
+
+By privileged group: Backup Operators 2, SQL_DBA_Admins 2, Domain Admins 2,
+Firewall_Admins 1, ERP_Superuser 1, Server Operators 1.
+
+### Technique notes
+
+- Structurally identical to LA-03. Convert the text date, set a fixed
+  threshold, filter enabled accounts against it, add the age, stratify.
+- `Format-Table` controls display shape only. Removing it prints the same
+  records as stacked lists; removing it without also removing the trailing `|`
+  raises "An empty pipe element is not allowed."
+- The `Enabled` condition is carried over for the same reason as LA-03. A
+  disabled account with an old password is not an exception.
+
+### Audit notes
+
+- The longest credential age exceeds nine years on an enabled account.
+- `vendor_acme_sup` appears in LA-03, LA-04, and LA-05 workpapers: dormant,
+  no MFA, and stale credential, holding ERP_Superuser throughout.
+- Service and shared accounts account for 8 of 62. Rotation practicality
+  differs for non-interactive accounts and is a separate remediation path.
+
+---
+
 ## Random Selection (reference — not yet run)
 
 **Audit purpose:** Converts a judgmental selection into a reproducible, reperformable one.
