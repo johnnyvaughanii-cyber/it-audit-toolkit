@@ -77,8 +77,8 @@ the technique notes behind it, and the reasoning for the method chosen.
 | Terminated retaining enabled accounts | 24 (26%) |
 | Of those, holding privileged access | 5 |
 
-The privileged subset included Domain Admins membership and one Backup
-Operators account with no MFA enrollment.
+The privileged subset held Server Operators (2), Backup Operators (2), and
+SQL_DBA_Admins (1). One of the Backup Operators accounts had no MFA enrollment.
 
 Backup Operators is routinely under-weighted because the name reads as
 custodial. The group can read and restore files regardless of the permissions

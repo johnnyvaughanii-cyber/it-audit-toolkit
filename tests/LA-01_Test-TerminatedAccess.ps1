@@ -23,10 +23,10 @@
 # Set the folder once. A reviewer repoints the script at their own
 # extract by editing this single line, without touching test logic.
 
-$auditPath = "C:\Projects\Audit"
+$auditPath = "C:\Projects\it-audit-toolkit"
 
-$pop = Import-Csv "$auditPath\hr_roster.csv"
-$ad  = Import-Csv "$auditPath\ad_user_accounts.csv"
+$pop = Import-Csv "$auditPath\data\hr_roster.csv"
+$ad  = Import-Csv "$auditPath\data\ad_user_accounts.csv"
 
 
 # --- Population completeness -----------------------------------

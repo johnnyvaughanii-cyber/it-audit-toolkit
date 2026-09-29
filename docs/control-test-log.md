@@ -60,7 +60,7 @@ $exceptions     | Export-Csv "$auditPath\workpapers\WP-LA-01-01_Terminated_Enabl
 $privExceptions | Export-Csv "$auditPath\workpapers\WP-LA-01-02_Privileged_Terminated_Accounts.csv" -NoTypeInformation
 ```
 
-**Results:** 24 of 91 terminated users retained enabled accounts (26% failure rate). 5 of those 24 held privileged group membership, including Domain Admins. One Backup Operators account had no MFA enrollment.
+**Results:** 24 of 91 terminated users retained enabled accounts (26% failure rate). 5 of those 24 held privileged group membership: Server Operators 2, Backup Operators 2, SQL_DBA_Admins 1. One Backup Operators account had no MFA enrollment.
 
 ### Technique notes
 
@@ -75,7 +75,7 @@ $privExceptions | Export-Csv "$auditPath\workpapers\WP-LA-01-02_Privileged_Termi
 - **IT concentration is meaningful for a different reason** — it is the function that performs deprovisioning, and its personnel are most likely to hold privileged access.
 - **Backup Operators is under-weighted by auditors.** The group can read and restore files regardless of the permissions set on them, bypassing file-level access controls by design. Sounds custodial, is not.
 - **Post-separation `LastLogonDate`** changes the finding from a provisioning gap to evidence of post-separation access. Different severity, different reporting timeline.
-- **Two-tier finding here:** Domain Admins retained post-separation, and an unenrolled privileged account. Different remediation owners, different timelines.
+- **Two-tier finding here:** privileged group membership retained post-separation, and an unenrolled privileged account. Different remediation owners, different timelines.
 
 ---
 
