@@ -357,6 +357,94 @@ Firewall_Admins 1, ERP_Superuser 1, Server Operators 1.
 
 ---
 
+## LA-06 — Segregation of Privileged Access (Blocked)
+
+**Control objective:** Privileged access is appropriately segregated.
+
+Not tested. The directory extract carries one value per account in
+`PrivilegedGroup`, so no account can show conflicting memberships. Confirmed
+against the extract: 53 privileged rows, none holding more than one group.
+Testing requires a group membership extract with one row per account-group
+pair, the same extract LA-11 needs.
+
+---
+
+## LA-07 — Privileged Access Scope
+
+**Control objective:** Privileged access is limited to those requiring it.
+
+```powershell
+# --- Populations: numerator and denominator from the same base ---
+$enabled = $ad | Where-Object { $_.Enabled -eq "TRUE" }
+$enabled.Count                                  # 417
+
+$privileged = $ad | Where-Object {
+    $_.Enabled -eq "TRUE" -and $_.PrivilegedGroup -ne ""
+}
+$privileged.Count                               # 48
+
+# --- Proportion ---
+$privPct = [math]::Round(($privileged.Count / $enabled.Count) * 100, 1)
+$privPct                                        # 11.5
+
+# --- Stratify by department ---
+$privileged | Group-Object Department | Sort-Object Count -Descending | Format-Table Name, Count
+
+# --- Accounts outside expected departments ---
+# The judgment of which departments warrant privilege sits in one line.
+$expectedDepts = @("Information Technology")
+
+$outOfScope = $privileged | Where-Object { $_.Department -notin $expectedDepts }
+$outOfScope.Count                               # 20
+
+$outOfScope |
+    Sort-Object Department |
+    Select-Object SamAccountName, DisplayName, Department, AccountType, PrivilegedGroup |
+    Format-Table
+
+# --- Retain evidence ---
+$privileged | Export-Csv "$auditPath\workpapers\WP-LA-07-01_Privileged_Enabled_Population.csv" -NoTypeInformation
+$outOfScope | Sort-Object Department |
+    Export-Csv "$auditPath\workpapers\WP-LA-07-02_Privileged_Out_Of_Scope.csv" -NoTypeInformation
+```
+
+**Results:** 48 enabled accounts hold privileged group membership, 11.5% of
+417 enabled accounts. 20 sit outside Information Technology.
+
+By department: Information Technology 28, Engineering 6, Finance 4,
+Operations 4, Sales 3, Customer Service 1, Legal & Compliance 1, Marketing 1.
+Reconciles to 48.
+
+Outside IT, by privileged group: Firewall_Admins 4, Server Operators 4,
+Backup Operators 4, Domain Admins 3, SQL_DBA_Admins 3, ERP_Superuser 2.
+By account type: User 18, Shared 2.
+
+### Technique notes
+
+- Numerator and denominator come from the same population. The first draft
+  counted privileged accounts across all 500 (53, including disabled) against
+  an enabled denominator; both sides are now restricted to enabled accounts.
+- `@( )` builds a list. `-notin` tests each department against it.
+- `/` divides, `*` multiplies, `[math]::Round(value, 1)` rounds to one
+  decimal place.
+- `Sort-Object` must come before `Format-Table`. `Format-Table` converts data
+  to display output; nothing after it can read the columns.
+- After `Group-Object`, each row is a bucket: `Name` is the grouped value,
+  `Count` the number of records in it.
+- Container names ignore capitalization. `$outofScope` and `$outOfScope` are
+  the same container.
+
+### Audit notes
+
+- `$expectedDepts` holds the scoping judgment. It is visible to a reviewer and
+  changes in one line without touching the filter.
+- Department is a proxy for role. Job title from the HR roster would sharpen
+  the test; that requires joining the two extracts on `EmployeeID`.
+- Domain Admins is held outside IT by accounts in Engineering, Sales, and
+  Operations, including a shared training-room account.
+
+---
+
 ## Random Selection (reference — not yet run)
 
 **Audit purpose:** Converts a judgmental selection into a reproducible, reperformable one.
@@ -379,9 +467,10 @@ Seeded exception areas:
 1. Terminated users with enabled accounts — **LA-01, 24 found**
 2. Accounts not attributable to an HR record — **LA-02, 16 found (12 blank, 4 orphaned)**
 3. Dormant accounts exceeding 90 days — **LA-03, 64 found (11 privileged)**
-4. Privileged accounts without MFA enrollment — next
-5. Stale credentials past 365 days
-6. Segregation of duties conflicts across privileged groups
+4. Privileged accounts without MFA enrollment — **LA-04, 19 found**
+5. Stale credentials past 365 days — **LA-05, 62 found (9 privileged)**
+6. Segregation of duties conflicts across privileged groups — **LA-06, blocked: one group per account in the extract**
+7. Privileged access outside expected departments — **LA-07, 20 found**
 
 See `control-matrix.md` for the full roadmap and the extracts required to unblock
 the remaining domains.

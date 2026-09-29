@@ -62,7 +62,8 @@ the technique notes behind it, and the reasoning for the method chosen.
 | LA-03 | Inactive accounts identified and disabled | Complete |
 | LA-04 | Privileged access requires MFA | Complete |
 | LA-05 | Credentials rotated per policy | Complete |
-| LA-06 | Privileged access appropriately segregated | Not started |
+| LA-06 | Privileged access appropriately segregated | Blocked |
+| LA-07 | Privileged access limited to those requiring it | Complete |
 
 ---
 

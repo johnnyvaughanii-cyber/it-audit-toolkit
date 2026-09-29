@@ -23,8 +23,8 @@ most examined in SOX ITGC and FFIEC engagements.
 | LA-03 | Inactive accounts are identified and disabled | Enabled accounts with no authentication activity exceeding 90 days | Complete |
 | LA-04 | Privileged access requires multi-factor authentication | Privileged group membership tested for MFA enrollment | Complete |
 | LA-05 | Credentials are rotated in accordance with policy | Password age exceeding 365 days on enabled accounts | Complete |
-| LA-06 | Privileged access is appropriately segregated | Conflicting privileged group memberships held by a single account | Ready |
-| LA-07 | Privileged access is limited to those requiring it | Administrator count as a proportion of population; reasonableness against role | Ready |
+| LA-06 | Privileged access is appropriately segregated | Conflicting privileged group memberships held by a single account | Blocked — needs group membership extract, one row per membership |
+| LA-07 | Privileged access is limited to those requiring it | Privileged accounts as a proportion of the enabled population; stratified by department; accounts outside expected departments isolated | Complete |
 | LA-08 | Access is provisioned timely upon hire | Active personnel with no corresponding directory account | Ready |
 | LA-09 | Shared and generic accounts are governed | Shared accounts tested for named owner, documented purpose, credential rotation | Ready |
 | LA-10 | Service accounts are appropriately restricted | Service accounts tested for interactive logon activity and password age | Ready |
@@ -109,7 +109,7 @@ extracts will be generated as each domain is built:
 
 | Extract | Unlocks |
 |---|---|
-| Group membership (nested) | LA-11 |
+| Group membership, one row per membership | LA-06, LA-11 |
 | Transfer and role change history | LA-12 |
 | Domain password policy export | LA-13 |
 | UAR recertification records | LA-14 |
