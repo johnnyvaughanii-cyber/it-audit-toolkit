@@ -1,5 +1,5 @@
 # =============================================================
-#  WP-LA-07 | Privileged Access MFA Enrollment
+#  WP-LA-04-01 | Privileged Access MFA Enrollment
 # -------------------------------------------------------------
 #  Control objective : Privileged access requires multi-factor
 #                      authentication.
@@ -38,7 +38,7 @@ $noMFA |
 $noMFA | Group-Object AccountType | Sort-Object Count -Descending | Format-Table Name, Count
 
 $privileged |
-    Export-Csv "$auditPath\workpapers\WP-LA-07_Privileged_Population.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-04-01_Privileged_Population.csv" -NoTypeInformation
 
 $noMFA |
-    Export-Csv "$auditPath\workpapers\WP-LA-08_Privileged_No_MFA.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-04-02_Privileged_No_MFA.csv" -NoTypeInformation

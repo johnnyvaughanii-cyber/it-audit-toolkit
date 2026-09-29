@@ -1,5 +1,5 @@
 # =============================================================
-#  WP-LA-01 | Termination-to-Access Reconciliation
+#  WP-LA-01-01 | Termination-to-Access Reconciliation
 # -------------------------------------------------------------
 #  Control objective : Logical access is revoked timely upon
 #                      separation from the organization.
@@ -106,7 +106,7 @@ $privExceptions |
 # complete record.
 
 $exceptions |
-    Export-Csv "$auditPath\workpapers\WP-LA-01_Terminated_Enabled_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-01-01_Terminated_Enabled_Accounts.csv" -NoTypeInformation
 
 $privExceptions |
-    Export-Csv "$auditPath\workpapers\WP-LA-02_Privileged_Terminated_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-01-02_Privileged_Terminated_Accounts.csv" -NoTypeInformation

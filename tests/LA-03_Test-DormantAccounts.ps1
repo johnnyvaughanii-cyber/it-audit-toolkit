@@ -1,5 +1,5 @@
 # =============================================================
-#  WP-LA-05 | Dormant Account Review
+#  WP-LA-03-01 | Dormant Account Review
 # -------------------------------------------------------------
 #  Control objective : Inactive accounts are identified and
 #                      disabled.
@@ -52,8 +52,8 @@ $dormantPriv.Count
 
 $dormant |
     Sort-Object DaysInactive -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-05_Dormant_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-03-01_Dormant_Accounts.csv" -NoTypeInformation
 
 $dormantPriv |
     Sort-Object DaysInactive -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-06_Dormant_Privileged_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-03-02_Dormant_Privileged_Accounts.csv" -NoTypeInformation

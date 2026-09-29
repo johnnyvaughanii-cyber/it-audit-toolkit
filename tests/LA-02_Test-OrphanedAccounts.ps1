@@ -1,5 +1,5 @@
 # =============================================================
-#  WP-LA-03 | Account Attribution Review
+#  WP-LA-02-01 | Account Attribution Review
 # -------------------------------------------------------------
 #  Control objective : Directory accounts are attributable to an
 #                      authorized individual.
@@ -38,7 +38,7 @@ $trueOrphans |
     Select-Object SamAccountName, DisplayName, EmployeeID, Department, PrivilegedGroup, LastLogonDate |
     Format-Table
 $blankID |
-    Export-Csv "$auditPath\workpapers\WP-LA-03_Non-Attributable_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-02-01_Non-Attributable_Accounts.csv" -NoTypeInformation
 
 $trueOrphans |
-    Export-Csv "$auditPath\workpapers\WP-LA-04_Orphaned_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-02-02_Orphaned_Accounts.csv" -NoTypeInformation

@@ -56,8 +56,8 @@ $privExceptions.Count                           # 5
 $privExceptions | Select-Object SamAccountName, DisplayName, Department, PrivilegedGroup, MFAEnrolled | Format-Table
 
 # --- Retain evidence ---
-$exceptions     | Export-Csv "$auditPath\WP-LA-01_Terminated_Enabled_Accounts.csv" -NoTypeInformation
-$privExceptions | Export-Csv "$auditPath\WP-LA-02_Privileged_Terminated_Accounts.csv" -NoTypeInformation
+$exceptions     | Export-Csv "$auditPath\workpapers\WP-LA-01-01_Terminated_Enabled_Accounts.csv" -NoTypeInformation
+$privExceptions | Export-Csv "$auditPath\workpapers\WP-LA-01-02_Privileged_Terminated_Accounts.csv" -NoTypeInformation
 ```
 
 **Results:** 24 of 91 terminated users retained enabled accounts (26% failure rate). 5 of those 24 held privileged group membership, including Domain Admins. One Backup Operators account had no MFA enrollment.
@@ -112,8 +112,8 @@ $trueOrphans |
     Format-Table
 
 # --- Retain evidence: two workpapers, two owners ---
-$blankID     | Export-Csv "$auditPath\workpapers\WP-LA-03_Non-Attributable_Accounts.csv" -NoTypeInformation
-$trueOrphans | Export-Csv "$auditPath\workpapers\WP-LA-04_Orphaned_Accounts.csv" -NoTypeInformation
+$blankID     | Export-Csv "$auditPath\workpapers\WP-LA-02-01_Non-Attributable_Accounts.csv" -NoTypeInformation
+$trueOrphans | Export-Csv "$auditPath\workpapers\WP-LA-02-02_Orphaned_Accounts.csv" -NoTypeInformation
 ```
 
 **Results:** 16 unattributable accounts of 500. 12 blank identifier, 4 true orphans.
@@ -183,9 +183,9 @@ $dormantPriv.Count                              # 11
 
 # --- Retain evidence ---
 $dormant     | Sort-Object DaysInactive -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-05_Dormant_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-03-01_Dormant_Accounts.csv" -NoTypeInformation
 $dormantPriv | Sort-Object DaysInactive -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-06_Dormant_Privileged_Accounts.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-03-02_Dormant_Privileged_Accounts.csv" -NoTypeInformation
 ```
 
 **Results:** 64 enabled accounts with no authentication activity exceeding 90
@@ -251,8 +251,8 @@ $noMFA |
 $noMFA | Group-Object AccountType | Sort-Object Count -Descending | Format-Table Name, Count
 
 # --- Retain evidence ---
-$privileged | Export-Csv "$auditPath\workpapers\WP-LA-07_Privileged_Population.csv" -NoTypeInformation
-$noMFA      | Export-Csv "$auditPath\workpapers\WP-LA-08_Privileged_No_MFA.csv" -NoTypeInformation
+$privileged | Export-Csv "$auditPath\workpapers\WP-LA-04-01_Privileged_Population.csv" -NoTypeInformation
+$noMFA      | Export-Csv "$auditPath\workpapers\WP-LA-04-02_Privileged_No_MFA.csv" -NoTypeInformation
 ```
 
 **Results:** 53 privileged accounts of 500. 19 without MFA enrollment (36%).
@@ -324,9 +324,9 @@ $stalePwdPriv.Count                             # 9
 
 # --- Retain evidence ---
 $stalePwd     | Sort-Object DaysSincePwdSet -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-09_Stale_Credentials.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-05-01_Stale_Credentials.csv" -NoTypeInformation
 $stalePwdPriv | Sort-Object DaysSincePwdSet -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-10_Stale_Credentials_Privileged.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-05-02_Stale_Credentials_Privileged.csv" -NoTypeInformation
 ```
 
 **Results:** 62 enabled accounts with credentials past the 365-day threshold,

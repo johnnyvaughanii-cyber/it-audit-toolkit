@@ -1,5 +1,5 @@
 # =============================================================
-#  WP-LA-09 | Credential Rotation Review
+#  WP-LA-05-01 | Credential Rotation Review
 # -------------------------------------------------------------
 #  Control objective : Credentials are rotated in accordance
 #                      with policy.
@@ -53,8 +53,8 @@ $stalePwdPriv.Count
 
 $stalePwd |
     Sort-Object DaysSincePwdSet -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-09_Stale_Credentials.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-05-01_Stale_Credentials.csv" -NoTypeInformation
 
 $stalePwdPriv |
     Sort-Object DaysSincePwdSet -Descending |
-    Export-Csv "$auditPath\workpapers\WP-LA-10_Stale_Credentials_Privileged.csv" -NoTypeInformation
+    Export-Csv "$auditPath\workpapers\WP-LA-05-02_Stale_Credentials_Privileged.csv" -NoTypeInformation
