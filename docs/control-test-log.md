@@ -445,6 +445,106 @@ By account type: User 18, Shared 2.
 
 ---
 
+## LA-08 — Provisioning Timeliness
+
+**Control objective:** Access is provisioned timely upon hire.
+
+```powershell
+# --- Active personnel with no directory account ---
+$active = $pop | Where-Object { $_.EmploymentStatus -eq "Active" }
+$active.Count                                   # 396
+
+$adIDs = $ad.EmployeeID
+$adIDs.Count                                    # 500
+
+$noAccount = $active | Where-Object { $_.EmployeeID -notin $adIDs }
+$noAccount.Count                                # 3
+
+# --- Lookup table: EmployeeID -> HR record ---
+$hrLookup = @{}
+foreach ($emp in $pop) {
+    $hrLookup[$emp.EmployeeID] = $emp
+}
+$hrLookup.Count                                 # 487
+
+# --- Accounts with a matching HR record ---
+$matched = $ad | Where-Object { $hrLookup.ContainsKey($_.EmployeeID) }
+$matched.Count                                  # 484
+
+# --- Attach hire date, measure the gap ---
+$matched = $matched | Select-Object *, @{
+    Name       = "HireDate"
+    Expression = { [datetime]$hrLookup[$_.EmployeeID].HireDate }
+}
+$matched = $matched | Select-Object *, @{
+    Name       = "DaysToProvision"
+    Expression = { ([datetime]$_.WhenCreated - $_.HireDate).Days }
+}
+
+$matched | Measure-Object DaysToProvision -Minimum -Maximum   # -3 to 12
+
+# --- Threshold ---
+$maxProvisionDays = 5
+$late  = $matched | Where-Object { $_.DaysToProvision -gt $maxProvisionDays }
+$early = $matched | Where-Object { $_.DaysToProvision -lt 0 }
+
+# --- Reconciliation ---
+$untestable   = $ad.Count - $matched.Count
+$withinPolicy = $matched.Count - $late.Count - $early.Count
+"Population $($ad.Count) = Tested $($matched.Count) + Untestable $untestable"
+"Tested $($matched.Count) = Within policy $withinPolicy + Late $($late.Count) + Early $($early.Count)"
+
+# --- Retain evidence ---
+$noAccount | Export-Csv "$auditPath\workpapers\WP-LA-08-01_Active_No_Account.csv" -NoTypeInformation
+$late      | Sort-Object DaysToProvision -Descending |
+    Export-Csv "$auditPath\workpapers\WP-LA-08-02_Provisioned_Late.csv" -NoTypeInformation
+$early     | Sort-Object DaysToProvision |
+    Export-Csv "$auditPath\workpapers\WP-LA-08-03_Provisioned_Before_Hire.csv" -NoTypeInformation
+```
+
+**Results:** 3 of 396 active employees have no directory account. Of 500
+accounts, 484 match an HR record and were tested; 16 are untestable, which
+ties to the 16 unattributable accounts in LA-02.
+
+```
+Population 500 = Tested 484 + Untestable 16
+Tested 484 = Within policy 177 + Late 218 + Early 89
+```
+
+Gap from hire to account creation ranges from -3 to 12 days.
+
+### Technique notes
+
+- First test joining two extracts record by record. `@{}` builds an empty
+  lookup table; `foreach` files each HR record under its EmployeeID;
+  `$hrLookup[$_.EmployeeID]` retrieves the matching record for each account.
+- `.ContainsKey()` separates accounts that can be tested from those that
+  cannot, so untestable records are counted rather than silently dropped.
+- A hard-coded spot check (`$hrLookup["E104763"].HireDate`) confirmed the
+  lookup returned the right record, then was removed from the script.
+- `Measure-Object -Minimum -Maximum` shows the range before a threshold is set.
+- `$( )` inside double quotes evaluates an expression and inserts the result.
+  Without it, `"$ad.Count"` prints the container followed by the literal text
+  `.Count`.
+- First reconciliation line in the toolkit stating
+  population = tested + untestable, and tested = within policy + exceptions.
+
+### Audit notes
+
+- Three active employees with no account fall into two different conditions.
+  One was hired 05/26/2026, roughly three months before the as-of date. Two
+  were hired in 2016 and 2022 and have never had an account, which points to
+  roles not requiring directory access or to a record-matching problem rather
+  than a provisioning delay.
+- Accounts created before the hire date are a separate condition from late
+  provisioning: access existed before employment began.
+- Test data limitation: the synthetic extract spreads creation dates evenly
+  from 3 days before to 12 days after hire rather than seeding a small set of
+  exceptions, so the late and early counts move directly with the threshold
+  and should not be read as a realistic exception rate.
+
+---
+
 ## Random Selection (reference — not yet run)
 
 **Audit purpose:** Converts a judgmental selection into a reproducible, reperformable one.
@@ -471,6 +571,7 @@ Seeded exception areas:
 5. Stale credentials past 365 days — **LA-05, 62 found (9 privileged)**
 6. Segregation of duties conflicts across privileged groups — **LA-06, blocked: one group per account in the extract**
 7. Privileged access outside expected departments — **LA-07, 20 found**
+8. Provisioning timeliness — **LA-08, 3 active with no account; 218 late, 89 before hire (5-day threshold)**
 
 See `control-matrix.md` for the full roadmap and the extracts required to unblock
 the remaining domains.
