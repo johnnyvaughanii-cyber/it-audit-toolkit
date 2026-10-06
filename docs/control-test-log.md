@@ -545,6 +545,79 @@ Gap from hire to account creation ranges from -3 to 12 days.
 
 ---
 
+## LA-09 — Shared Account Governance
+
+**Control objective:** Shared and generic accounts are governed.
+
+```powershell
+# --- Shared population ---
+$shared = $ad | Where-Object { $_.AccountType -eq "Shared" }
+$shared.Count                                   # 4
+
+$shared |
+    Select-Object SamAccountName, DisplayName, Enabled, LastLogonDate, PasswordLastSet, PrivilegedGroup, MFAEnrolled |
+    Format-Table
+
+# --- Enabled subset ---
+$sharedEnabled = $shared | Where-Object { $_.Enabled -eq "TRUE" }
+$sharedEnabled.Count                            # 3
+
+# --- Credential age ---
+$asOfDate  = [datetime]"08/29/2026"
+$maxPwdAge = 365
+$cutoff    = $asOfDate.AddDays(-$maxPwdAge)
+$sharedStale = $sharedEnabled | Where-Object { [datetime]$_.PasswordLastSet -lt $cutoff }
+$sharedStale.Count                              # 3
+
+# --- Reconciliation ---
+$sharedDisabled = $shared.Count - $sharedEnabled.Count
+$sharedNoMFA    = $sharedEnabled | Where-Object { $_.MFAEnrolled -eq "FALSE" }
+"Shared $($shared.Count) = Enabled $($sharedEnabled.Count) + Disabled $sharedDisabled"
+"Enabled $($sharedEnabled.Count): Stale credential $($sharedStale.Count), No MFA $($sharedNoMFA.Count)"
+
+# --- Retain evidence ---
+$shared        | Export-Csv "$auditPath\workpapers\WP-LA-09-01_Shared_Accounts.csv" -NoTypeInformation
+$sharedEnabled | Export-Csv "$auditPath\workpapers\WP-LA-09-02_Shared_Enabled_Exceptions.csv" -NoTypeInformation
+```
+
+**Results:** 4 shared accounts, 3 enabled and 1 disabled. All 3 enabled
+accounts have credentials older than 365 days and no MFA enrollment.
+
+```
+Shared 4 = Enabled 3 + Disabled 1
+Enabled 3: Stale credential 3, No MFA 3
+```
+
+Two of the three enabled accounts hold privileged access: `shared_warehouse`
+(Backup Operators) and `shared_training` (Domain Admins). The third,
+`audit_readonly`, has not had its password changed since 08/09/2017.
+
+### Technique notes
+
+- The date conversion happens inside the `Where-Object` test
+  (`[datetime]$_.PasswordLastSet -lt $cutoff`) rather than as an added column.
+  With three records there is no need to carry a converted column forward.
+- Exception counts on the second reconciliation line overlap, so they are
+  reported against the tested population rather than summed to it.
+- Results go into new containers (`$sharedEnabled`, `$sharedStale`) so
+  `$shared` keeps the full population for the first workpaper. Writing a filter
+  result back into the container it came from replaces the original.
+- `-First` only matters when there are more rows than wanted; with four
+  accounts it changes nothing.
+
+### Audit notes
+
+- Named owner and documented purpose are not in the directory extract. Those
+  attributes require the shared account register, which is outside the data
+  available here; the test covers rotation, MFA, and privilege only.
+- A shared account in Domain Admins with no MFA and a password unchanged since
+  2018 has no individual accountability on the most privileged group in the
+  domain.
+- `audit_readonly` is an external audit access account; its age suggests it
+  was provisioned for one engagement and never retired.
+
+---
+
 ## Random Selection (reference — not yet run)
 
 **Audit purpose:** Converts a judgmental selection into a reproducible, reperformable one.
@@ -572,6 +645,7 @@ Seeded exception areas:
 6. Segregation of duties conflicts across privileged groups — **LA-06, blocked: one group per account in the extract**
 7. Privileged access outside expected departments — **LA-07, 20 found**
 8. Provisioning timeliness — **LA-08, 3 active with no account; 218 late, 89 before hire (5-day threshold)**
+9. Shared account governance — **LA-09, 3 of 3 enabled shared accounts with stale credentials and no MFA**
 
 See `control-matrix.md` for the full roadmap and the extracts required to unblock
 the remaining domains.

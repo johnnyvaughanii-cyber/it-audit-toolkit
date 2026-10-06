@@ -26,7 +26,7 @@ most examined in SOX ITGC and FFIEC engagements.
 | LA-06 | Privileged access is appropriately segregated | Conflicting privileged group memberships held by a single account | Blocked — needs group membership extract, one row per membership |
 | LA-07 | Privileged access is limited to those requiring it | Privileged accounts as a proportion of the enabled population; stratified by department; accounts outside expected departments isolated | Complete |
 | LA-08 | Access is provisioned timely upon hire | Active personnel with no corresponding directory account; account creation date compared to hire date against a 5-day threshold | Complete |
-| LA-09 | Shared and generic accounts are governed | Shared accounts tested for named owner, documented purpose, credential rotation | Ready |
+| LA-09 | Shared and generic accounts are governed | Shared accounts tested for credential rotation and MFA; named owner and documented purpose not in extract | Complete |
 | LA-10 | Service accounts are appropriately restricted | Service accounts tested for interactive logon activity and password age | Ready |
 | LA-11 | Effective access reflects intended access | Nested group membership resolved to effective privilege | Blocked — needs group membership extract |
 | LA-12 | Access is adjusted upon role change | Accumulated entitlements across prior and current department | Blocked — needs transfer history |

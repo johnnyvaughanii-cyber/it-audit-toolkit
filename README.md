@@ -65,6 +65,7 @@ the technique notes behind it, and the reasoning for the method chosen.
 | LA-06 | Privileged access appropriately segregated | Blocked |
 | LA-07 | Privileged access limited to those requiring it | Complete |
 | LA-08 | Access provisioned timely upon hire | Complete |
+| LA-09 | Shared and generic accounts governed | Complete |
 
 ---
 
